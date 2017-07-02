@@ -31,7 +31,7 @@ public class FourthTaskFibonacciNumber implements Task {
         System.out.println(finishTime - startTime + " ms");
     }
 
-    private BigInteger fibonacci(int num) {
+    public BigInteger fibonacci(int num) {
         if (num < 2) return BigInteger.valueOf(num);
         if (cache.containsKey(num)) return cache.get(num);
         BigInteger res;
@@ -43,4 +43,7 @@ public class FourthTaskFibonacciNumber implements Task {
 
     }
 
+    public BigInteger getCache() {
+        return cache.get(number);
+    }
 }

@@ -15,6 +15,10 @@ public class SecondTaskFindFloorAndPorch implements Task {
 
     private int apartment;
 
+    private int porch = 0;
+
+    private int floorApartment;
+
     public SecondTaskFindFloorAndPorch(int floor, int apartmentsOnTheFloor, int apartment) {
         this.floor = floor;
         this.apartmentsOnTheFloor = apartmentsOnTheFloor;
@@ -24,8 +28,6 @@ public class SecondTaskFindFloorAndPorch implements Task {
     @Override
     public void solution() {
         int numberOfFlatInThePorch = floor * apartmentsOnTheFloor;
-        int porch = 0;
-        int floorApartment;
         if (floor < 0 || apartmentsOnTheFloor < 0 || apartment < 0) {
             System.out.println("The number of floor in the house or number of apartaments on the floor or the number of flat is incorrect");
             return;
@@ -41,5 +43,13 @@ public class SecondTaskFindFloorAndPorch implements Task {
             floorApartment /= apartmentsOnTheFloor;
         }
         System.out.println("The porch of " + apartment + " flat is " + porch + " porch and floor is " + floorApartment);
+    }
+
+    public int getPorch() {
+        return porch;
+    }
+
+    public int getFloorApartment() {
+        return floorApartment;
     }
 }

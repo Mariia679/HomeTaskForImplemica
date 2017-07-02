@@ -7,6 +7,8 @@ import com.implemica.Task;
  */
 public class FifthTaskFindTheDayOfTheWeek implements Task {
 
+    private int day;
+
     private int findDay;
 
     private int numberOfMonth;
@@ -61,51 +63,66 @@ public class FifthTaskFindTheDayOfTheWeek implements Task {
         }
         switch (this.numberOfMonth) {
             case 1:
-                System.out.println("This day is " + findDay(firstDay) + " at the week");
+                day = findDay(firstDay);
+                System.out.println("This day is " + day + " at the week");
                 break;
             case 2:
-                System.out.println("This day is " + findDay(february) + " at the week");
+                day = findDay(february);
+                System.out.println("This day is " + day + " at the week");
                 break;
             case 3:
-                System.out.println("This day is " + findDay(march) + " at the week");
+                day = findDay(march);
+                System.out.println("This day is " + day + " at the week");
                 break;
             case 4:
-                System.out.println("This day is " + findDay(april) + " at the week");
+                day = findDay(april);
+                System.out.println("This day is " + day + " at the week");
                 break;
             case 5:
-                System.out.println("This day is " + findDay(may) + " at the week");
+                day = findDay(may);
+                System.out.println("This day is " + day + " at the week");
                 break;
             case 6:
-                System.out.println("This day is " + findDay(june) + " at the week");
+                day = findDay(june);
+                System.out.println("This day is " + day + " at the week");
                 break;
             case 7:
-                System.out.println("This day is " + findDay(july) + " at the week");
+                day = findDay(july);
+                System.out.println("This day is " + day + " at the week");
                 break;
             case 8:
-                System.out.println("This day is " + findDay(august) + " at the week");
+                day = findDay(august);
+                System.out.println("This day is " + day + " at the week");
                 break;
             case 9:
-                System.out.println("This day is " + findDay(september) + " at the week");
+                day = findDay(september);
+                System.out.println("This day is " + day + " at the week");
                 break;
             case 10:
-                System.out.println("This day is " + findDay(october) + " at the week");
+                day = findDay(october);
+                System.out.println("This day is " + day + " at the week");
                 break;
             case 11:
-                System.out.println("This day is " + findDay(november) + " at the week");
+                day = findDay(november);
+                System.out.println("This day is " + day + " at the week");
                 break;
             case 12:
-                System.out.println("This day is " + findDay(december) + " at the week");
+                day = findDay(december);
+                System.out.println("This day is " + day + " at the week");
                 break;
             default:
                 break;
         }
     }
 
-    private int findDay(int month) {
+    public int findDay(int month) {
         if ((month + this.findDay) % 7 == 0) {
             return 6;
         }
         return (month + this.findDay) % 7 - 1;
     }
 
+    public int getDay() {
+        return day;
+    }
 }

@@ -15,6 +15,8 @@ public class ThirdTaskFindGreatestCommonDivisor implements Task {
 
     private int four;
 
+    private int divisor;
+
     public ThirdTaskFindGreatestCommonDivisor(int one, int two, int three, int four) {
         this.one = one;
         this.two = two;
@@ -34,9 +36,9 @@ public class ThirdTaskFindGreatestCommonDivisor implements Task {
         else minSecond = four;
         if (minFirst < minSecond) min = minFirst;
         else min = minSecond;
-        for (int i = min; i > 0; i--) {
-            if (one % i == 0 && two % i == 0 & three % i == 0 && four % i == 0) {
-                System.out.println("The greatest common divisor of four number:\n" +"Is: " + i);
+        for (divisor = min; divisor > 0; divisor--) {
+            if (one % divisor == 0 && two % divisor == 0 & three % divisor == 0 && four % divisor == 0) {
+                System.out.println("The greatest common divisor of four number:\n" +"Is: " + divisor);
                 break;
             }
         }
@@ -59,5 +61,9 @@ public class ThirdTaskFindGreatestCommonDivisor implements Task {
             four *= -1;
         }
 
+    }
+
+    public int getDivisor() {
+        return divisor;
     }
 }

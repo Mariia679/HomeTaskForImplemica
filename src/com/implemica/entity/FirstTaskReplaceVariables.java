@@ -20,12 +20,19 @@ public class FirstTaskReplaceVariables implements Task {
     @Override
     public void solution() {
         System.out.println("X = " + first + " ,Y = " + second);
-        this.first = first ^ second;
-        this.second = first ^ second;
-        this.first = second ^ first;
-        System.out.println("X = " + first + " ,Y = " + second);
+        first = first ^ second;
+        second = first ^ second;
+        first = second ^ first;
+        System.out.println("X = " + getFirst() + " ,Y = " + getSecond());
 
 
     }
 
+    public int getFirst() {
+        return first;
+    }
+
+    public int getSecond() {
+        return second;
+    }
 }
