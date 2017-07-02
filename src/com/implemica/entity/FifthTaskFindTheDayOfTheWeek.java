@@ -55,6 +55,10 @@ public class FifthTaskFindTheDayOfTheWeek implements Task {
 
     @Override
     public void solution() {
+        if (firstDay < 0 || findDay <= 0 || numberOfMonth <= 0) {
+            System.out.println("You enter incorrect data");
+            return;
+        }
         switch (this.numberOfMonth) {
             case 1:
                 System.out.println("This day is " + findDay(firstDay) + " at the week");

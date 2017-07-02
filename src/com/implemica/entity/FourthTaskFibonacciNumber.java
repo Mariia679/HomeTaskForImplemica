@@ -21,6 +21,10 @@ public class FourthTaskFibonacciNumber implements Task {
 
     @Override
     public void solution() {
+        if(number<0){
+            System.out.println("The number of fibonacci could not be negative");
+            return;
+        }
         long startTime = System.currentTimeMillis();
         System.out.println(fibonacci(this.number));
         long finishTime = System.currentTimeMillis();
