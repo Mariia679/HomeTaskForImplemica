@@ -9,12 +9,18 @@ public class FifthTaskTest {
 
     FifthTaskFindTheDayOfTheWeek fifthTask1;
 
+    FifthTaskFindTheDayOfTheWeek fifthTask2;
+
     FifthTaskFindTheDayOfTheWeek fifthTask3;
+
+    FifthTaskFindTheDayOfTheWeek fifthTask4;
 
     @Before
     public void setUp() throws Exception {
         fifthTask1 = new FifthTaskFindTheDayOfTheWeek(0,2,7);
+        fifthTask2 = new FifthTaskFindTheDayOfTheWeek(0,32,12);
         fifthTask3 = new FifthTaskFindTheDayOfTheWeek(-2,0,-2);
+        fifthTask4 = new FifthTaskFindTheDayOfTheWeek(0,2,13);
     }
 
     @After
@@ -29,8 +35,18 @@ public class FifthTaskTest {
         assertEquals(0,fifthTask1.getDay());
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test
+    public void solutionTest2() throws Exception {
+        fifthTask2.solution();
+    }
+
+    @Test
     public void solutionTest3() throws Exception {
         fifthTask3.solution();
+    }
+
+    @Test
+    public void solutionTest4() throws Exception {
+        fifthTask4.solution();
     }
 }

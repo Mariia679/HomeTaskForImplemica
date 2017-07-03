@@ -41,7 +41,7 @@ public class FourthTaskTest {
         assertEquals(BigInteger.valueOf(5), fourthTask2.fibonacci(5));
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test
     public void solutionTest3() throws Exception {
         fourthTask3.solution();
     }

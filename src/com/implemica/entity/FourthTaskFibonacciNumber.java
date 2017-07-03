@@ -20,10 +20,14 @@ public class FourthTaskFibonacciNumber implements Task {
     }
 
     @Override
-    public void solution() throws  IllegalArgumentException{
-        if(number<0){
-            System.out.println("The number of fibonacci could not be negative");
-            throw  new IllegalArgumentException();
+    public void solution(){
+        try {
+            if (number < 0) {
+                throw new IllegalArgumentException("The number of fibonacci could not be negative");
+            }
+        }catch (IllegalArgumentException ex){
+            ex.printStackTrace();
+            return;
         }
         long startTime = System.currentTimeMillis();
         System.out.println(fibonacci(this.number));

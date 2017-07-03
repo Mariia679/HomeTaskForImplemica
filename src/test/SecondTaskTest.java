@@ -30,7 +30,7 @@ public class SecondTaskTest {
         assertEquals(2, secondTask1.getPorch());
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test
     public void solutionNegativeTest() throws Exception {
         secondTask2.solution();
     }

@@ -57,62 +57,164 @@ public class FifthTaskFindTheDayOfTheWeek implements Task {
 
     @Override
     public void solution() throws IllegalArgumentException {
-        if (firstDay < 0 || findDay <= 0 || numberOfMonth <= 0) {
-            System.out.println("You enter incorrect data");
-            throw new IllegalArgumentException();
+        try {
+            if (firstDay < 0 || findDay <= 0 || numberOfMonth <= 0) {
+                throw new IllegalArgumentException("You enter incorrect data");
+            }
+        } catch (IllegalArgumentException ex) {
+            ex.printStackTrace();
+            return;
         }
         switch (this.numberOfMonth) {
             case 1:
+                try {
+                    if (findDay > 31) {
+                        throw new IllegalArgumentException("You enter incorrect day of january");
+                    }
+                } catch (IllegalArgumentException ex) {
+                    ex.printStackTrace();
+                    return;
+                }
                 day = findDay(firstDay);
                 System.out.println("This day is " + day + " at the week");
                 break;
             case 2:
+                try {
+                    if (findDay > 28) {
+                        throw new IllegalArgumentException("You enter incorrect day of february");
+                    }
+                } catch (IllegalArgumentException ex) {
+                    ex.printStackTrace();
+                    return;
+                }
                 day = findDay(february);
                 System.out.println("This day is " + day + " at the week");
                 break;
             case 3:
+                try {
+                    if (findDay > 31) {
+                        throw new IllegalArgumentException("You enter incorrect day of march");
+                    }
+                } catch (IllegalArgumentException ex) {
+                    ex.printStackTrace();
+                    return;
+                }
                 day = findDay(march);
                 System.out.println("This day is " + day + " at the week");
                 break;
             case 4:
+                try {
+                    if (findDay > 30) {
+                        throw new IllegalArgumentException("You enter incorrect day of april");
+                    }
+                } catch (IllegalArgumentException ex) {
+                    ex.printStackTrace();
+                    return;
+                }
                 day = findDay(april);
                 System.out.println("This day is " + day + " at the week");
                 break;
             case 5:
+                try {
+                    if (findDay > 31) {
+                        throw new IllegalArgumentException("You enter incorrect day of may");
+                    }
+                } catch (IllegalArgumentException ex) {
+                    ex.printStackTrace();
+                    return;
+                }
                 day = findDay(may);
                 System.out.println("This day is " + day + " at the week");
                 break;
             case 6:
+                try {
+                    if (findDay > 30) {
+                        throw new IllegalArgumentException("You enter incorrect day of june");
+                    }
+                } catch (IllegalArgumentException ex) {
+                    ex.printStackTrace();
+                    return;
+                }
                 day = findDay(june);
                 System.out.println("This day is " + day + " at the week");
                 break;
             case 7:
+                try {
+                    if (findDay > 31) {
+                        throw new IllegalArgumentException("You enter incorrect day of july");
+                    }
+                } catch (IllegalArgumentException ex) {
+                    ex.printStackTrace();
+                    return;
+                }
                 day = findDay(july);
                 System.out.println("This day is " + day + " at the week");
                 break;
             case 8:
+                try {
+                    if (findDay > 31) {
+                        throw new IllegalArgumentException("You enter incorrect day of august");
+                    }
+                } catch (IllegalArgumentException ex) {
+                    ex.printStackTrace();
+                    return;
+                }
                 day = findDay(august);
                 System.out.println("This day is " + day + " at the week");
                 break;
             case 9:
+                try {
+                    if (findDay > 30) {
+                        throw new IllegalArgumentException("You enter incorrect day of september");
+                    }
+                } catch (IllegalArgumentException ex) {
+                    ex.printStackTrace();
+                    return;
+                }
                 day = findDay(september);
                 System.out.println("This day is " + day + " at the week");
                 break;
             case 10:
+                try {
+                    if (findDay > 31) {
+                        throw new IllegalArgumentException("You enter incorrect day of october");
+                    }
+                } catch (IllegalArgumentException ex) {
+                    ex.printStackTrace();
+                    return;
+                }
                 day = findDay(october);
                 System.out.println("This day is " + day + " at the week");
                 break;
             case 11:
+                try {
+                    if (findDay > 30) {
+                        throw new IllegalArgumentException("You enter incorrect day of november");
+                    }
+                } catch (IllegalArgumentException ex) {
+                    ex.printStackTrace();
+                    return;
+                }
                 day = findDay(november);
                 System.out.println("This day is " + day + " at the week");
                 break;
             case 12:
+                try {
+                    if (findDay > 31) {
+                        throw new IllegalArgumentException("You enter incorrect day of december");
+                    }
+                } catch (IllegalArgumentException ex) {
+                    ex.printStackTrace();
+                    return;
+                }
                 day = findDay(december);
                 System.out.println("This day is " + day + " at the week");
                 break;
             default:
+                System.out.println("You enter incorrect number of month");
                 break;
         }
+
     }
 
     public int findDay(int month) {
