@@ -56,10 +56,10 @@ public class FifthTaskFindTheDayOfTheWeek implements Task {
     }
 
     @Override
-    public void solution() {
+    public void solution() throws IllegalArgumentException {
         if (firstDay < 0 || findDay <= 0 || numberOfMonth <= 0) {
             System.out.println("You enter incorrect data");
-            return;
+            throw new IllegalArgumentException();
         }
         switch (this.numberOfMonth) {
             case 1:

@@ -26,11 +26,11 @@ public class SecondTaskFindFloorAndPorch implements Task {
     }
 
     @Override
-    public void solution() {
+    public void solution()throws IllegalArgumentException {
         int numberOfFlatInThePorch = floor * apartmentsOnTheFloor;
-        if (floor < 0 || apartmentsOnTheFloor < 0 || apartment < 0) {
+        if (floor <= 0 || apartmentsOnTheFloor <= 0 || apartment <= 0) {
             System.out.println("The number of floor in the house or number of apartaments on the floor or the number of flat is incorrect");
-            return;
+            throw new IllegalArgumentException();
         }
         for (floorApartment = apartment; floorApartment > 0; floorApartment -= numberOfFlatInThePorch) {
             porch++;

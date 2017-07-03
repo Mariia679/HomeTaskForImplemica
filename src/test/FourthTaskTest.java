@@ -22,13 +22,27 @@ public class FourthTaskTest {
         fourthTask3 = new FourthTaskFibonacciNumber(-2);
     }
 
+    @After
+    public void tearDown() throws Exception {
+        fourthTask1 = null;
+        fourthTask2 = null;
+        fourthTask3 = null;
+    }
+
     @Test
-    public void solutionTest() throws Exception {
+    public void solutionTest1() throws Exception {
         fourthTask1.solution();
         assertEquals(BigInteger.ONE, fourthTask1.fibonacci(1));
+    }
+
+    @Test
+    public void solutionTest2() throws Exception {
         fourthTask2.solution();
         assertEquals(BigInteger.valueOf(5), fourthTask2.fibonacci(5));
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void solutionTest3() throws Exception {
         fourthTask3.solution();
-        assertEquals(null, fourthTask3.getCache());
     }
 }

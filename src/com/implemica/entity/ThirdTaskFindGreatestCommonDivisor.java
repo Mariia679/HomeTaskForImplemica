@@ -29,20 +29,19 @@ public class ThirdTaskFindGreatestCommonDivisor implements Task {
         signChange();
         int minFirst;
         int minSecond;
-        int min;
         if (one < two) minFirst = one;
         else minFirst = two;
         if (three < four) minSecond = three;
         else minSecond = four;
-        if (minFirst < minSecond) min = minFirst;
-        else min = minSecond;
-        for (divisor = min; divisor > 0; divisor--) {
+        if (minFirst < minSecond) divisor = minFirst;
+        else divisor = minSecond;
+        for (; divisor > 0; divisor--) {
             if (one % divisor == 0 && two % divisor == 0 & three % divisor == 0 && four % divisor == 0) {
                 System.out.println("The greatest common divisor of four number:\n" +"Is: " + divisor);
                 break;
             }
         }
-        if(min == 0){
+        if(divisor == 0){
             System.out.println("The greatest common divisor of four number:\n" + "Is: " + 1);
         }
     }

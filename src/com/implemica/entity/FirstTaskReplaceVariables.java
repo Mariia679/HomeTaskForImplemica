@@ -11,7 +11,6 @@ public class FirstTaskReplaceVariables implements Task {
 
     private int second;
 
-
     public FirstTaskReplaceVariables(int first, int second) {
         this.first = first;
         this.second = second;
@@ -24,8 +23,6 @@ public class FirstTaskReplaceVariables implements Task {
         second = first ^ second;
         first = second ^ first;
         System.out.println("X = " + getFirst() + " ,Y = " + getSecond());
-
-
     }
 
     public int getFirst() {

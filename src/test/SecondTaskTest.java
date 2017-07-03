@@ -17,13 +17,22 @@ public class SecondTaskTest {
         secondTask2 = new SecondTaskFindFloorAndPorch(-9, 4, 37);
     }
 
+    @After
+    public void tearDown() throws Exception {
+        secondTask1 = null;
+        secondTask2 = null;
+    }
+
     @Test
     public void solutionTest() throws Exception {
         secondTask1.solution();
         assertEquals(1, secondTask1.getFloorApartment());
         assertEquals(2, secondTask1.getPorch());
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void solutionNegativeTest() throws Exception {
         secondTask2.solution();
-        assertEquals(0, secondTask2.getPorch());
-        assertEquals(0, secondTask2.getFloorApartment());
     }
 }
+

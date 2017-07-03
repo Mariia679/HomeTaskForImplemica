@@ -21,11 +21,19 @@ public class ThirdTaskTest {
     }
 
     @Test
-    public void solutionTest() throws Exception {
+    public void solutionTest1() throws Exception {
         thirdTask1.solution();
         assertEquals(2, thirdTask1.getDivisor());
+    }
+
+    @Test
+    public void solutionTest2() throws Exception {
         thirdTask2.solution();
         assertEquals(2, thirdTask2.getDivisor());
+    }
+
+    @Test
+    public void solutionTest3() throws Exception {
         thirdTask3.solution();
         assertEquals(0, thirdTask3.getDivisor());
     }
