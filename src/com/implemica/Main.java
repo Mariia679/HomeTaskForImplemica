@@ -3,13 +3,14 @@ package com.implemica;
 
 import com.implemica.entity.*;
 
+
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Task task = null;
+        double number;
         one:
         while (true) {
             System.out.println("Enter the number");
@@ -24,31 +25,32 @@ public class Main {
             switch (sc.next()) {
                 case "1":
                     System.out.println("Enter first and second variable");
-                    task = new FirstTaskReplaceVariables(sc.nextInt(), sc.nextInt());
-                    task.solution();
+                    FirstTaskReplaceVariables task = new FirstTaskReplaceVariables();
+                    task.solution((int) sc.nextDouble(), (int) sc.nextDouble());
                     break;
                 case "2":
                     System.out.println("Enter number of floor in the house and number of apartaments on the floor and the number of flat");
-                    task = new SecondTaskFindFloorAndPorch(sc.nextInt(), sc.nextInt(), sc.nextInt());
-                    task.solution();
+                    SecondTaskFindFloorAndPorch taskSecond = new SecondTaskFindFloorAndPorch();
+                    System.out.println(taskSecond.solution(sc.nextInt(), sc.nextInt(), sc.nextInt())+ " floor");
                     break;
                 case "3":
                     System.out.println("Enter four number");
-                    task = new ThirdTaskFindGreatestCommonDivisor(sc.nextInt(), sc.nextInt(), sc.nextInt(), sc.nextInt());
-                    task.solution();
+                    ThirdTaskFindGreatestCommonDivisor taskThird = new ThirdTaskFindGreatestCommonDivisor();
+                    System.out.println(taskThird.solution(sc.nextInt(), sc.nextInt(), sc.nextInt(), sc.nextInt()));
                     break;
                 case "4":
                     System.out.println("Enter the number of the Fibonacci number what you want to find");
-                    task = new FourthTaskFibonacciNumber(sc.nextInt());
-                    task.solution();
+                    number = sc.nextDouble();
+                    FourthTaskFibonacciNumber taskFour = new FourthTaskFibonacciNumber();
+                    System.out.println(taskFour.solution((int) number));
                     break;
                 case "5":
                     System.out.println("Enter the the first day of the year and number of day and month you want to find");
                     System.out.println("0 - sunday  1 - monday  2 - tuesday  3 - wednesday  4 - thursday  5 - friday  6 - saturday");
                     System.out.println("1 - january  2 - february  3 - march  4 - april  5 - may\n" +
                             "6 - june  7 - july  8 - august  9 - september  10 - october  11 - november  12 - december");
-                    task = new FifthTaskFindTheDayOfTheWeek(sc.nextInt(), sc.nextInt(), sc.nextInt());
-                    task.solution();
+                    FifthTaskFindTheDayOfTheWeek taskFifth = new FifthTaskFindTheDayOfTheWeek();
+                    System.out.println(taskFifth.solution(sc.nextInt(), sc.nextInt(), sc.nextInt()));
                     break;
                 default:
                     break one;

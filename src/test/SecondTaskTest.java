@@ -9,30 +9,30 @@ public class SecondTaskTest {
 
     SecondTaskFindFloorAndPorch secondTask1;
 
-    SecondTaskFindFloorAndPorch secondTask2;
-
     @Before
     public void setUp() throws Exception {
-        secondTask1 = new SecondTaskFindFloorAndPorch(9, 4, 37);
-        secondTask2 = new SecondTaskFindFloorAndPorch(-9, 4, 37);
-    }
-
-    @After
-    public void tearDown() throws Exception {
-        secondTask1 = null;
-        secondTask2 = null;
+        secondTask1 = new SecondTaskFindFloorAndPorch();
     }
 
     @Test
-    public void solutionTest() throws Exception {
-        secondTask1.solution();
-        assertEquals(1, secondTask1.getFloorApartment());
-        assertEquals(2, secondTask1.getPorch());
-    }
-
-    @Test
-    public void solutionNegativeTest() throws Exception {
-        secondTask2.solution();
+    public void solutionTest1() throws Exception {
+        assertEquals(2 + " porch " + 1 + " floor", secondTask1.solution(9, 4, 37));
+        assertEquals(Integer.MAX_VALUE + " porch " + 1 + " floor", secondTask1.solution(Integer.MAX_VALUE, Integer.MAX_VALUE, Integer.MAX_VALUE));
+        assertEquals("-1", secondTask1.solution(0, Integer.MAX_VALUE, 0));
+        assertEquals("-1", secondTask1.solution(0, 0, 0));
+        assertEquals(1 + " porch " + 1 + " floor", secondTask1.solution(1023342343, 1023342343, 1023342343));
+        assertEquals(1 + " porch " + 9 + " floor", secondTask1.solution(9, 4, 36));
+        assertEquals(3 + " porch " + 3 + " floor", secondTask1.solution(5, 2, 25));
+        assertEquals(2 + " porch " + 2 + " floor", secondTask1.solution(5, 4, 25));
+        assertEquals(1 + " porch " + 5 + " floor", secondTask1.solution(5, 5, 25));
+        assertEquals("-1", secondTask1.solution(Integer.MIN_VALUE, Integer.MIN_VALUE, Integer.MIN_VALUE));
+        assertEquals("-1", secondTask1.solution(-1023342343, -1023342343, -1023342343));
+        assertEquals("-1", secondTask1.solution(-1, 1, 1));
+        assertEquals("-1", secondTask1.solution(5, -1, 20));
+        assertEquals("-1", secondTask1.solution(5, 2, -1));
+        assertEquals("-1", secondTask1.solution(-1, -1, 1));
+        assertEquals("-1", secondTask1.solution(1, -1, -1));
+        assertEquals("-1", secondTask1.solution(-1, 1, -1));
     }
 }
 

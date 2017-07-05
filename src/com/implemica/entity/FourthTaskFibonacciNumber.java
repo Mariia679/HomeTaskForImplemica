@@ -1,7 +1,5 @@
 package com.implemica.entity;
 
-import com.implemica.Task;
-
 import java.math.BigInteger;
 import java.util.HashMap;
 import java.util.Map;
@@ -9,44 +7,26 @@ import java.util.Map;
 /**
  * Find the n-th number of Fibonacci
  */
-public class FourthTaskFibonacciNumber implements Task {
+public class FourthTaskFibonacciNumber {
 
     private Map<Integer, BigInteger> cache = new HashMap<>();
 
-    private int number;
-
-    public FourthTaskFibonacciNumber(int number) {
-        this.number = number;
-    }
-
-    @Override
-    public void solution(){
-        try {
-            if (number < 0) {
-                throw new IllegalArgumentException("The number of fibonacci could not be negative");
-            }
-        }catch (IllegalArgumentException ex){
-            ex.printStackTrace();
-            return;
+    public BigInteger solution(int number) {
+        if (number < 0) {
+            System.out.println("The number of fibonacci could not be negative");
+            return null;
         }
-        long startTime = System.currentTimeMillis();
-        System.out.println(fibonacci(this.number));
-        long finishTime = System.currentTimeMillis();
-        System.out.println(finishTime - startTime + " ms");
-    }
-
-    public BigInteger fibonacci(int num) {
-        if (num < 2) return BigInteger.valueOf(num);
-        if (cache.containsKey(num)) return cache.get(num);
+        if (number > 194800) {
+            System.out.println("The number of fibonacci could not be so big");
+            return null;
+        }
+        if (number < 2) return BigInteger.valueOf(number);
+        if (cache.containsKey(number)) return cache.get(number);
         BigInteger res;
-        for (int i = 2; i <= num; i++) {
-            res = fibonacci(i - 1).add(fibonacci(i - 2));
+        for (int i = 2; i <= number; i++) {
+            res = solution(i - 1).add(solution(i - 2));
             cache.put(i, res);
         }
-        return cache.get(num);
-    }
-
-    public BigInteger getCache() {
         return cache.get(number);
     }
 }
