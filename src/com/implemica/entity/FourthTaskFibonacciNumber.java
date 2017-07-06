@@ -13,11 +13,9 @@ public class FourthTaskFibonacciNumber {
 
     public BigInteger solution(int number) {
         if (number < 0) {
-            System.out.println("The number of fibonacci could not be negative");
             return null;
         }
         if (number > 194800) {
-            System.out.println("The number of fibonacci could not be so big");
             return null;
         }
         if (number < 2) return BigInteger.valueOf(number);

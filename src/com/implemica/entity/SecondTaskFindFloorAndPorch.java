@@ -14,7 +14,6 @@ public class SecondTaskFindFloorAndPorch {
 
     public String solution(int floor, int apartmentsOnTheFloor, int apartment) {
         if (floor <= 0 || apartmentsOnTheFloor <= 0 || apartment <= 0) {
-            System.out.println("The number of floor in the house or number of apartaments on the floor or the number of flat is incorrect");
             return "-1";
         }
         int porch = 0;

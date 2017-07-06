@@ -21,91 +21,27 @@ public class ThirdTaskTest {
 
     @Test
     public void solutionTest1() throws Exception {
-        assertEquals(2147483647, thirdTask1.solution(Integer.MAX_VALUE, Integer.MAX_VALUE, Integer.MAX_VALUE, Integer.MAX_VALUE));
+        methodTest(0, 0, 0, 0, 1);
+        methodTest(2, 4, 6, 8, 2);
+        methodTest(23, 89, 131, 2, 1);
+        methodTest(1023242324, 1023242324, 1023242324, 1023242324, 1023242324);
+        methodTest(-1023242324, -1023242324, -1023242324, -1023242324, 1023242324);
+        methodTest(Integer.MIN_VALUE, 6, 12, 20, 2);
+        methodTest(Integer.MIN_VALUE, Integer.MIN_VALUE, 6, 20, 2);
+        methodTest(Integer.MIN_VALUE, 6, 12, Integer.MIN_VALUE, 2);
+        methodTest(12, 6, Integer.MIN_VALUE, Integer.MIN_VALUE, 2);
+        methodTest(6, Integer.MIN_VALUE, Integer.MIN_VALUE, 6, 2);
+        methodTest(Integer.MIN_VALUE, Integer.MIN_VALUE, Integer.MIN_VALUE, 6, 2);
+        methodTest(Integer.MIN_VALUE, Integer.MIN_VALUE, 6, Integer.MIN_VALUE, 2);
+        methodTest(Integer.MIN_VALUE, 6, Integer.MIN_VALUE, Integer.MIN_VALUE, 2);
+        methodTest(6, Integer.MIN_VALUE, Integer.MIN_VALUE, Integer.MIN_VALUE, 2);
+        methodTest(Integer.MAX_VALUE, Integer.MAX_VALUE, Integer.MAX_VALUE, Integer.MAX_VALUE, Integer.MAX_VALUE);
+        methodTest(Integer.MIN_VALUE, Integer.MIN_VALUE, Integer.MIN_VALUE, Integer.MIN_VALUE, Integer.MIN_VALUE);
+        methodTest(321, 322, 333, 334, 1);
+        methodTest(654, 400, 600, 800, 2);
     }
 
-    @Test
-    public void solutionTest2() throws Exception {
-        assertEquals(Integer.MIN_VALUE, thirdTask1.solution(Integer.MIN_VALUE, Integer.MIN_VALUE, Integer.MIN_VALUE, Integer.MIN_VALUE));
-    }
-
-    @Test
-    public void solutionTest3() throws Exception {
-        assertEquals(1, thirdTask1.solution(0, 0, 0, 0));
-    }
-
-    @Test
-    public void solutionTest4() throws Exception {
-        assertEquals(1, thirdTask1.solution(23, 89, 131, 2));
-    }
-
-    @Test
-    public void solutionTest5() throws Exception {
-        assertEquals(2, thirdTask1.solution(2, 4, 6, 8));
-    }
-
-    @Test
-    public void solutionTest6() throws Exception {
-        assertEquals(1023242324, thirdTask1.solution(1023242324, 1023242324, 1023242324, 1023242324));
-    }
-
-    @Test
-    public void solutionTest7() throws Exception {
-        assertEquals(1023242324, thirdTask1.solution(-1023242324, -1023242324, -1023242324, -1023242324));
-    }
-
-    @Test
-    public void solutionTest8() throws Exception {
-        assertEquals(1, thirdTask1.solution(321, 322, 333, 334));
-    }
-
-    @Test
-    public void solutionTest9() throws Exception {
-        assertEquals(2, thirdTask1.solution(654, 400, 600, 800));
-    }
-
-    @Test
-    public void solutionTest10() throws Exception {
-        assertEquals(2, thirdTask1.solution(Integer.MIN_VALUE, 6, 12, 20));
-    }
-
-    @Test
-    public void solutionTest11() throws Exception {
-        assertEquals(2, thirdTask1.solution(Integer.MIN_VALUE, Integer.MIN_VALUE, 6, 20));
-    }
-
-    @Test
-    public void solutionTest12() throws Exception {
-        assertEquals(2, thirdTask1.solution(Integer.MIN_VALUE, Integer.MIN_VALUE, Integer.MIN_VALUE, 6));
-    }
-
-    @Test
-    public void solutionTest13() throws Exception {
-        assertEquals(2, thirdTask1.solution(Integer.MIN_VALUE, 6, 12, Integer.MIN_VALUE));
-    }
-
-    @Test
-    public void solutionTest14() throws Exception {
-        assertEquals(2, thirdTask1.solution(Integer.MIN_VALUE, Integer.MIN_VALUE, 6, Integer.MIN_VALUE));
-    }
-
-    @Test
-    public void solutionTest15() throws Exception {
-        assertEquals(2, thirdTask1.solution(Integer.MIN_VALUE, 6, Integer.MIN_VALUE, Integer.MIN_VALUE));
-    }
-
-    @Test
-    public void solutionTest16() throws Exception {
-        assertEquals(2, thirdTask1.solution(12, 6, Integer.MIN_VALUE, Integer.MIN_VALUE));
-    }
-
-    @Test
-    public void solutionTest17() throws Exception {
-        assertEquals(2, thirdTask1.solution(6, Integer.MIN_VALUE, Integer.MIN_VALUE, 6));
-    }
-
-    @Test
-    public void solutionTest18() throws Exception {
-        assertEquals(2, thirdTask1.solution(6, Integer.MIN_VALUE, Integer.MIN_VALUE, Integer.MIN_VALUE));
+    private void methodTest(int one, int two, int three, int four, int expected) {
+        assertEquals(expected, thirdTask1.solution(one, two, three, four));
     }
 }

@@ -16,23 +16,27 @@ public class SecondTaskTest {
 
     @Test
     public void solutionTest1() throws Exception {
-        assertEquals(2 + " porch " + 1 + " floor", secondTask1.solution(9, 4, 37));
-        assertEquals(Integer.MAX_VALUE + " porch " + 1 + " floor", secondTask1.solution(Integer.MAX_VALUE, Integer.MAX_VALUE, Integer.MAX_VALUE));
-        assertEquals("-1", secondTask1.solution(0, Integer.MAX_VALUE, 0));
-        assertEquals("-1", secondTask1.solution(0, 0, 0));
-        assertEquals(1 + " porch " + 1 + " floor", secondTask1.solution(1023342343, 1023342343, 1023342343));
-        assertEquals(1 + " porch " + 9 + " floor", secondTask1.solution(9, 4, 36));
-        assertEquals(3 + " porch " + 3 + " floor", secondTask1.solution(5, 2, 25));
-        assertEquals(2 + " porch " + 2 + " floor", secondTask1.solution(5, 4, 25));
-        assertEquals(1 + " porch " + 5 + " floor", secondTask1.solution(5, 5, 25));
-        assertEquals("-1", secondTask1.solution(Integer.MIN_VALUE, Integer.MIN_VALUE, Integer.MIN_VALUE));
-        assertEquals("-1", secondTask1.solution(-1023342343, -1023342343, -1023342343));
-        assertEquals("-1", secondTask1.solution(-1, 1, 1));
-        assertEquals("-1", secondTask1.solution(5, -1, 20));
-        assertEquals("-1", secondTask1.solution(5, 2, -1));
-        assertEquals("-1", secondTask1.solution(-1, -1, 1));
-        assertEquals("-1", secondTask1.solution(1, -1, -1));
-        assertEquals("-1", secondTask1.solution(-1, 1, -1));
+        methodTest(5, 5, 25,1 + " porch " + 5 + " floor");
+        methodTest(5, 4, 25,2 + " porch " + 2 + " floor");
+        methodTest(5, 2, 25,3 + " porch " + 3 + " floor");
+        methodTest(9, 4, 36,1 + " porch " + 9 + " floor");
+        methodTest(9, 4, 37,2 + " porch " + 1 + " floor");
+        methodTest(1023342343, 1023342343, 1023342343,1 + " porch " + 1 + " floor");
+        methodTest(Integer.MAX_VALUE, Integer.MAX_VALUE, Integer.MAX_VALUE,Integer.MAX_VALUE + " porch " + 1 + " floor");
+        methodTest(0, Integer.MAX_VALUE, 0,"-1");
+        methodTest(Integer.MIN_VALUE, Integer.MIN_VALUE, Integer.MIN_VALUE,"-1");
+        methodTest(-1023342343, -1023342343, -1023342343,"-1");
+        methodTest(0, 0, 0,"-1");
+        methodTest(-1, 1, 1,"-1");
+        methodTest(5, -1, 20,"-1");
+        methodTest(5, 2, -1,"-1");
+        methodTest(-1, -1, 1,"-1");
+        methodTest(1, -1, -1,"-1");
+        methodTest(-1, 1, -1,"-1");
+    }
+
+    private void methodTest(int floor, int apartmentsOnTheFloor, int apartment,String expected) {
+        assertEquals(expected, secondTask1.solution(floor, apartmentsOnTheFloor, apartment));
     }
 }
 
