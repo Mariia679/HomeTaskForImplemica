@@ -1,4 +1,4 @@
-package com.implemica.entity;
+package com.implemica.task;
 
 import java.math.BigInteger;
 import java.util.HashMap;
@@ -13,12 +13,15 @@ public class FourthTaskFibonacciNumber {
 
     public BigInteger solution(int number) {
         if (number < 0) {
-            return null;
+            throw new IllegalArgumentException();
         }
         if (number > 194800) {
-            return null;
+            throw new IllegalArgumentException();
         }
-        if (number < 2) return BigInteger.valueOf(number);
+        if (number < 2) {
+            cache.put(number, BigInteger.valueOf(number));
+            return BigInteger.valueOf(number);
+        }
         if (cache.containsKey(number)) return cache.get(number);
         BigInteger res;
         for (int i = 2; i <= number; i++) {

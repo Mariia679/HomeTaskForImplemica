@@ -1,4 +1,4 @@
-package com.implemica.entity;
+package com.implemica.task;
 
 /**
  * Find the day of the week knowing that the year has started from a certain day of the week
@@ -8,6 +8,9 @@ public class FifthTaskFindTheDayOfTheWeek {
     private int findDay;
 
     public int solution(int firstDay, int findDay, int numberOfMonth) {
+        if (firstDay > 6) {
+            throw new IllegalArgumentException();
+        }
         this.findDay = findDay;
         int february = (firstDay + 31) % 7;
         int march = (february + 28) % 7;
@@ -21,71 +24,71 @@ public class FifthTaskFindTheDayOfTheWeek {
         int november = (october + 31) % 7;
         int december = (november + 30) % 7;
         if (firstDay < 0 || findDay <= 0 || numberOfMonth <= 0) {
-            return -1;
+            throw new IllegalArgumentException();
         }
         switch (numberOfMonth) {
             case 1:
                 if (findDay > 31) {
-                    return -1;
+                    throw new IllegalArgumentException();
                 }
                 return findDay(firstDay);
             case 2:
                 if (findDay > 28) {
-                    return -1;
+                    throw new IllegalArgumentException();
                 }
                 return findDay(february);
             case 3:
                 if (findDay > 31) {
-                    return -1;
+                    throw new IllegalArgumentException();
                 }
                 return findDay(march);
             case 4:
                 if (findDay > 30) {
-                    return -1;
+                    throw new IllegalArgumentException();
                 }
                 return findDay(april);
             case 5:
                 if (findDay > 31) {
-                    return -1;
+                    throw new IllegalArgumentException();
                 }
                 return findDay(may);
             case 6:
                 if (findDay > 30) {
-                    return -1;
+                    throw new IllegalArgumentException();
                 }
                 return findDay(june);
             case 7:
                 if (findDay > 31) {
-                    return -1;
+                    throw new IllegalArgumentException();
                 }
                 return findDay(july);
             case 8:
                 if (findDay > 31) {
-                    return -1;
+                    throw new IllegalArgumentException();
                 }
                 return findDay(august);
             case 9:
                 if (findDay > 30) {
-                    return -1;
+                    throw new IllegalArgumentException();
                 }
                 return findDay(september);
             case 10:
                 if (findDay > 31) {
-                    return -1;
+                    throw new IllegalArgumentException();
                 }
                 return findDay(october);
             case 11:
                 if (findDay > 30) {
-                    return -1;
+                    throw new IllegalArgumentException();
                 }
                 return findDay(november);
             case 12:
                 if (findDay > 31) {
-                    return -1;
+                    throw new IllegalArgumentException();
                 }
                 return findDay(december);
             default:
-                return -1;
+                throw new IllegalArgumentException();
         }
 
     }

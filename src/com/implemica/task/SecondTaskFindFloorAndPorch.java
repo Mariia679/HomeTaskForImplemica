@@ -1,4 +1,4 @@
-package com.implemica.entity;
+package com.implemica.task;
 
 /**
  * Find the number of the porch and the floor,
@@ -11,16 +11,18 @@ public class SecondTaskFindFloorAndPorch {
 
     private int numberOfFlatInThePorch;
 
-
-    public String solution(int floor, int apartmentsOnTheFloor, int apartment) {
+    public int solution(int floor, int apartmentsOnTheFloor, int apartment) {
         if (floor <= 0 || apartmentsOnTheFloor <= 0 || apartment <= 0) {
-            return "-1";
+            floorApartment = 0;
+            throw new IllegalArgumentException();
         }
         int porch = 0;
         numberOfFlatInThePorch = floor * apartmentsOnTheFloor;
+
         for (floorApartment = apartment; floorApartment > 0; floorApartment -= numberOfFlatInThePorch) {
             porch++;
         }
+
         floorApartment += numberOfFlatInThePorch;
         if (floorApartment > 0 || apartmentsOnTheFloor > 0) {
             if (floorApartment % apartmentsOnTheFloor != 0) {
@@ -30,7 +32,10 @@ public class SecondTaskFindFloorAndPorch {
                 floorApartment /= apartmentsOnTheFloor;
             }
         }
-        return porch + " porch " + floorApartment + " floor";
+        return porch ;
     }
 
+    public int getFloorApartment() {
+        return floorApartment;
+    }
 }

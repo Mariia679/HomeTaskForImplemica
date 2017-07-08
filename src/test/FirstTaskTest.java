@@ -1,14 +1,16 @@
 package test;
 
-import com.implemica.entity.FirstTaskReplaceVariables;
+import com.implemica.task.FirstTaskReplaceVariables;
 import org.junit.*;
 
 import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+import java.util.Random;
 
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.*;
 
-public class FirstTaskTest extends OutputTest {
+public class FirstTaskTest {
 
     FirstTaskReplaceVariables firstTaskTest1;
 
@@ -17,38 +19,52 @@ public class FirstTaskTest extends OutputTest {
         firstTaskTest1 = new FirstTaskReplaceVariables();
     }
 
+    @Test
+    public void solutionTest() throws Exception {
+        //limit valuable value
+        methodTest(Integer.MIN_VALUE, Integer.MAX_VALUE);
+        methodTest(Integer.MAX_VALUE, Integer.MIN_VALUE);
+        methodTest(Integer.MIN_VALUE, Integer.MIN_VALUE);
+        methodTest(Integer.MAX_VALUE, Integer.MAX_VALUE);
+
+        //the middle valuable value
+        methodTest(-1023242324, -1023242324);
+        methodTest(1023242324, 1023242324);
+        methodTest(-1023242324, 1023242324);
+        methodTest(1023242324, -1023242324);
+
+        //the positive value
+        methodTest(0, 0);
+        methodTest(0, 1);
+        methodTest(0, 500000);
+        methodTest(1, 1);
+        methodTest(5, 7);
+        methodTest(10, 20);
+        methodTest(20, 10);
+        methodTest(30019, 30020);
+        methodTest(30019, 12345678);
+
+        //the negative value
+        methodTest(40, -15);
+        methodTest(-20, -40);
+        methodTest(-9999, 1001);
+        methodTest(-7264, -9823);
+        methodTest(-7264, -9823);
+
+        Random r = new Random();
+        methodTest(r.nextInt(), r.nextInt());
+
+    }
+
+    private void methodTest(int first, int second) {
+        ByteArrayOutputStream output = new ByteArrayOutputStream();
+        System.setOut(new PrintStream(output));
+        firstTaskTest1.solution(first, second);
+        assertEquals("X = "+second+" ,Y = "+first, output.toString());
+    }
+
     @After
     public void tearDown() throws Exception {
         firstTaskTest1 = null;
     }
-
-    @Test
-    public void solutionTest() throws Exception {
-        methodTest(Integer.MIN_VALUE, Integer.MAX_VALUE, "X = " + Integer.MAX_VALUE + " ,Y = " + Integer.MIN_VALUE);
-        methodTest(Integer.MIN_VALUE, Integer.MIN_VALUE, "X = " + Integer.MIN_VALUE + " ,Y = " + Integer.MIN_VALUE);
-        methodTest(Integer.MAX_VALUE, Integer.MAX_VALUE, "X = " + Integer.MAX_VALUE + " ,Y = " + Integer.MAX_VALUE);
-        methodTest(-1023242324, -1023242324, "X = " + -1023242324 + " ,Y = " + -1023242324);
-        methodTest(1023242324, 1023242324, "X = " + 1023242324 + " ,Y = " + 1023242324);
-        methodTest(0, 0, "X = " + 0 + " ,Y = " + 0);
-        methodTest(0, 1, "X = " + 1 + " ,Y = " + 0);
-        methodTest(0, 500000, "X = " + 500000 + " ,Y = " + 0);
-        methodTest(0, 500000, "X = " + 500000 + " ,Y = " + 0);
-        methodTest(1, 1, "X = " + 1 + " ,Y = " + 1);
-        methodTest(5, 7, "X = " + 7 + " ,Y = " + 5);
-        methodTest(10, 20, "X = " + 20 + " ,Y = " + 10);
-        methodTest(20, 10, "X = " + 10 + " ,Y = " + 20);
-        methodTest(30019, 30020, "X = " + 30020 + " ,Y = " + 30019);
-        methodTest(30019, 12345678, "X = " + 12345678 + " ,Y = " + 30019);
-        methodTest(40, -15, "X = " + -15 + " ,Y = " + 40);
-        methodTest(-20, -40, "X = " + -40 + " ,Y = " + -20);
-        methodTest(-9999, 1001, "X = " + 1001 + " ,Y = " + -9999);
-        methodTest(-7264, -9823, "X = " + -9823 + " ,Y = " + -7264);
-        methodTest(-7264, -9823, "X = " + -9823 + " ,Y = " + -7264);
-    }
-
-    private void methodTest(int first, int second, String expected) {
-        firstTaskTest1.solution(first, second);
-        assertTrue(output.toString().contains(expected));
-    }
-
 }

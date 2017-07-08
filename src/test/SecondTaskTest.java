@@ -1,11 +1,17 @@
 package test;
 
-import com.implemica.entity.SecondTaskFindFloorAndPorch;
+import com.implemica.task.FourthTaskFibonacciNumber;
+import com.implemica.task.SecondTaskFindFloorAndPorch;
 import org.junit.*;
+import org.junit.rules.ExpectedException;
 
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.junit.Assert.*;
 
 public class SecondTaskTest {
+
+    @Rule
+    public final ExpectedException exception = ExpectedException.none();
 
     SecondTaskFindFloorAndPorch secondTask1;
 
@@ -16,27 +22,94 @@ public class SecondTaskTest {
 
     @Test
     public void solutionTest1() throws Exception {
-        methodTest(5, 5, 25,1 + " porch " + 5 + " floor");
-        methodTest(5, 4, 25,2 + " porch " + 2 + " floor");
-        methodTest(5, 2, 25,3 + " porch " + 3 + " floor");
-        methodTest(9, 4, 36,1 + " porch " + 9 + " floor");
-        methodTest(9, 4, 37,2 + " porch " + 1 + " floor");
-        methodTest(1023342343, 1023342343, 1023342343,1 + " porch " + 1 + " floor");
-        methodTest(Integer.MAX_VALUE, Integer.MAX_VALUE, Integer.MAX_VALUE,Integer.MAX_VALUE + " porch " + 1 + " floor");
-        methodTest(0, Integer.MAX_VALUE, 0,"-1");
-        methodTest(Integer.MIN_VALUE, Integer.MIN_VALUE, Integer.MIN_VALUE,"-1");
-        methodTest(-1023342343, -1023342343, -1023342343,"-1");
-        methodTest(0, 0, 0,"-1");
-        methodTest(-1, 1, 1,"-1");
-        methodTest(5, -1, 20,"-1");
-        methodTest(5, 2, -1,"-1");
-        methodTest(-1, -1, 1,"-1");
-        methodTest(1, -1, -1,"-1");
-        methodTest(-1, 1, -1,"-1");
+        //check variables @floor @apartmentOnTheFloor @apartment
+        //check that in one porch only @floor*@apartmentOnTheFloor apartments
+        //check that one floor contains @apartmentOnTheFloor
+        methodTest(5, 5, 26, 2, 1);
+        methodTest(5, 5, 25, 1, 5);
+        methodTest(5, 5, 21, 1, 5);
+        methodTest(5, 5, 11, 1, 3);
+        methodTest(5, 5, 15, 1, 3);
+        methodTest(5, 5, 16, 1, 4);
+        methodTest(5, 5, 1, 1, 1);
+        methodTest(5, 5, 5, 1, 1);
+        methodTest(5, 5, 6, 1, 2);
+
+        //check another porch for the same special cases
+        methodTest(5, 5, 2501, 101, 1);
+        methodTest(5, 5, 2500, 100, 5);
+        methodTest(5, 5, 2496, 100, 5);
+        methodTest(5, 5, 2486, 100, 3);
+        methodTest(5, 5, 2490, 100, 3);
+        methodTest(5, 5, 2491, 100, 4);
+        methodTest(5, 5, 2476, 100, 1);
+        methodTest(5, 5, 2480, 100, 1);
+        methodTest(5, 5, 2481, 100, 2);
+
+        //check one floor and one apartmentOnTheFloor the first apartment
+        methodTest(1, 1, 1, 1, 1);
+        methodTest(1, 1, 20, 20, 1);
+        methodTest(1, 1, 40, 40, 1);
+        methodTest(1, 1, 1001, 1001, 1);
+        methodTest(1, 1, 99999999, 99999999, 1);
+
+        //check one floor and other number of apartmentOnTheFloor
+        methodTest(1, 20, 1, 1, 1);
+        methodTest(1, 20, 21, 2, 1);
+        methodTest(1, 20, 1000, 50, 1);
+        methodTest(1, 20, 1001, 51, 1);
+        methodTest(1, 20, 99_999_970, 4_999_999, 1);
+        methodTest(1, 20, 100_000_000, 5_000_000, 1);
+
+        //check some number of floor and one apartmentOnTheFloor
+        methodTest(20, 1, 1, 1, 1);
+        methodTest(20, 1, 20, 1, 20);
+        methodTest(20, 1, 21, 2, 1);
+        methodTest(20, 1, 1000, 50, 20);
+        methodTest(20, 1, 1001, 51, 1);
+        methodTest(20, 1, 99_999_961, 4_999_999, 1);
+        methodTest(20, 1, 100_000_000, 5_000_000, 20);
+
+
+        //test check middle integer
+        methodTest(1023342343, 1023342343, 1023342343, 1, 1);
+        methodTest(1023342343, 1, 1, 1, 1);
+        methodTest(1, 1023342343, 1, 1, 1);
+        methodTest(1, 1, 1023342343, 1023342343, 1);
+
+        //the max of integer valuable value
+        methodTest(Integer.MAX_VALUE, Integer.MAX_VALUE, Integer.MAX_VALUE, Integer.MAX_VALUE, 1);
+        methodTest(Integer.MAX_VALUE, 1, 1, 1, 1);
+        methodTest(1, Integer.MAX_VALUE, 1, 1, 1);
+        methodTest(1, 1, Integer.MAX_VALUE, Integer.MAX_VALUE, 1);
+
+        //not valid value
+        //check that variables @floor @apartmentOnTheFloor @apartment can't be negative or zero
+        methodTestIllegalArgument(0, 0, 0);
+        methodTestIllegalArgument(-1, 1, 1);
+        methodTestIllegalArgument(5, -1, 20);
+        methodTestIllegalArgument(5, 2, -1);
+
+        //the min and middle not valuable value
+        methodTestIllegalArgument(Integer.MIN_VALUE, Integer.MIN_VALUE, Integer.MIN_VALUE);
+        methodTestIllegalArgument(Integer.MIN_VALUE, 2, 2);
+        methodTestIllegalArgument(2, Integer.MIN_VALUE, 2);
+        methodTestIllegalArgument(2, 2, Integer.MIN_VALUE);
+        methodTestIllegalArgument(-1023342343, -1023342343, -1023342343);
     }
 
-    private void methodTest(int floor, int apartmentsOnTheFloor, int apartment,String expected) {
-        assertEquals(expected, secondTask1.solution(floor, apartmentsOnTheFloor, apartment));
+    private void methodTest(int floor, int apartmentsOnTheFloor, int apartment, int expectedPorch, int expectedFloor) {
+        assertEquals(expectedPorch, secondTask1.solution(floor, apartmentsOnTheFloor, apartment));
+        assertEquals(expectedFloor, secondTask1.getFloorApartment());
     }
+
+    private void methodTestIllegalArgument(int floor, int apartmentsOnTheFloor, int apartment) {
+//        exception.expect(IllegalArgumentException.class);
+//        secondTask1.solution(floor, apartmentsOnTheFloor, apartment);
+        assertThatThrownBy(() -> new SecondTaskFindFloorAndPorch().solution(floor, apartmentsOnTheFloor, apartment))
+                .isInstanceOf(IllegalArgumentException.class);
+
+    }
+
 }
 

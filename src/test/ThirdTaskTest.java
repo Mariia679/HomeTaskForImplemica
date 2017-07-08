@@ -1,11 +1,17 @@
 package test;
 
-import com.implemica.entity.ThirdTaskFindGreatestCommonDivisor;
+import com.implemica.task.SecondTaskFindFloorAndPorch;
+import com.implemica.task.ThirdTaskFindGreatestCommonDivisor;
 import org.junit.*;
+import org.junit.rules.ExpectedException;
 
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.junit.Assert.*;
 
 public class ThirdTaskTest {
+
+    @Rule
+    public final ExpectedException exception = ExpectedException.none();
 
     ThirdTaskFindGreatestCommonDivisor thirdTask1;
 
@@ -14,34 +20,74 @@ public class ThirdTaskTest {
         thirdTask1 = new ThirdTaskFindGreatestCommonDivisor();
     }
 
-    @After
-    public void tearDown() throws Exception {
-        thirdTask1 = null;
-    }
-
     @Test
     public void solutionTest1() throws Exception {
+        //check that if all four numbers are zero the result will be one
         methodTest(0, 0, 0, 0, 1);
+        //check that if all four numbers are equal the result should be the same as this four numbers
+        methodTest(173762837, 173762837, 173762837, 173762837, 173762837);
+
+        //the special cases like all numbers are primes,all numbers dived by two,by three and consecutive numbers
         methodTest(2, 4, 6, 8, 2);
+        methodTest(3, 6, 9, 12, 3);
         methodTest(23, 89, 131, 2, 1);
-        methodTest(1023242324, 1023242324, 1023242324, 1023242324, 1023242324);
-        methodTest(-1023242324, -1023242324, -1023242324, -1023242324, 1023242324);
-        methodTest(Integer.MIN_VALUE, 6, 12, 20, 2);
-        methodTest(Integer.MIN_VALUE, Integer.MIN_VALUE, 6, 20, 2);
-        methodTest(Integer.MIN_VALUE, 6, 12, Integer.MIN_VALUE, 2);
-        methodTest(12, 6, Integer.MIN_VALUE, Integer.MIN_VALUE, 2);
-        methodTest(6, Integer.MIN_VALUE, Integer.MIN_VALUE, 6, 2);
-        methodTest(Integer.MIN_VALUE, Integer.MIN_VALUE, Integer.MIN_VALUE, 6, 2);
-        methodTest(Integer.MIN_VALUE, Integer.MIN_VALUE, 6, Integer.MIN_VALUE, 2);
-        methodTest(Integer.MIN_VALUE, 6, Integer.MIN_VALUE, Integer.MIN_VALUE, 2);
-        methodTest(6, Integer.MIN_VALUE, Integer.MIN_VALUE, Integer.MIN_VALUE, 2);
-        methodTest(Integer.MAX_VALUE, Integer.MAX_VALUE, Integer.MAX_VALUE, Integer.MAX_VALUE, Integer.MAX_VALUE);
-        methodTest(Integer.MIN_VALUE, Integer.MIN_VALUE, Integer.MIN_VALUE, Integer.MIN_VALUE, Integer.MIN_VALUE);
         methodTest(321, 322, 333, 334, 1);
-        methodTest(654, 400, 600, 800, 2);
+
+        //check that if one number is zero the result should be one
+        methodTest(0, 2, 3, 4, 1);
+        methodTest(1, 0, 2, 3, 1);
+        methodTest(1, 2, 0, 3, 1);
+        methodTest(1, 2, 3, 0, 1);
+
+        //check if three numbers divide by same divider and four do not divide this divider
+        methodTest(2, 4, 6, 43, 1);
+        methodTest(2, 4, 55, 22, 1);
+        methodTest(2, 99, 6, 22, 1);
+        methodTest(109, 4, 6, 22, 1);
+
+        //check if two numbers divide by same divider and other two numbers divide by other same divider
+        methodTest(2, 4, 9, 21, 1);
+        methodTest(9, 21, 2, 4, 1);
+        methodTest(9, 2, 4, 21, 1);
+        methodTest(2, 9, 21, 4, 1);
+
+        //Min value of integer illegal argument
+        methodTestIllegalArgument(Integer.MIN_VALUE, 6, 12, 21);
+        methodTestIllegalArgument(6, Integer.MIN_VALUE, 12, 21);
+        methodTestIllegalArgument(6, 12, Integer.MIN_VALUE, 21);
+        methodTestIllegalArgument(6, 12, 21, Integer.MIN_VALUE);
+        methodTestIllegalArgument(Integer.MIN_VALUE, Integer.MIN_VALUE, Integer.MIN_VALUE, Integer.MIN_VALUE);
+
+        //Max value of integer
+        methodTest(Integer.MAX_VALUE, Integer.MAX_VALUE, Integer.MAX_VALUE, Integer.MAX_VALUE, Integer.MAX_VALUE);
+        methodTest(Integer.MAX_VALUE, 6, 12, 20, 1);
+        methodTest(6, Integer.MAX_VALUE, 12, 20, 1);
+        methodTest(6, 12, Integer.MAX_VALUE, 20, 1);
+        methodTest(6, 12, 20, Integer.MAX_VALUE, 1);
+
+        //middle min and max value of integer
+        methodTest(-1023242324, 1023242324, 1023242324, 1023242324, 1023242324);
+        methodTest(1023242324, -1023242324, 1023242324, 1023242324, 1023242324);
+        methodTest(1023242324, 1023242324, -1023242324, 1023242324, 1023242324);
+        methodTest(1023242324, 1023242324, 1023242324, -1023242324, 1023242324);
+        methodTest(-1023242324, -1023242324, -1023242324, -1023242324, 1023242324);
+        methodTest(1023242324, 1023242324, 1023242324, 1023242324, 1023242324);
     }
 
     private void methodTest(int one, int two, int three, int four, int expected) {
         assertEquals(expected, thirdTask1.solution(one, two, three, four));
+    }
+
+    private void methodTestIllegalArgument(int one, int two, int three, int four){
+//        exception.expect(IllegalArgumentException.class);
+//        thirdTask1.solution(one, two, three, four);
+        assertThatThrownBy(() -> new ThirdTaskFindGreatestCommonDivisor().solution(one, two, three,four))
+                .isInstanceOf(IllegalArgumentException.class);
+    }
+
+
+    @After
+    public void tearDown() throws Exception {
+        thirdTask1 = null;
     }
 }

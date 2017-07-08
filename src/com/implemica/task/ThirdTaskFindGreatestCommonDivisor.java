@@ -1,4 +1,4 @@
-package com.implemica.entity;
+package com.implemica.task;
 
 
 /**
@@ -6,12 +6,12 @@ package com.implemica.entity;
  */
 public class ThirdTaskFindGreatestCommonDivisor {
 
-    public long solution(long one, long two, long three, long four) {
+    public long solution(int one, int two, int three, int four) {
         long minFirst;
         long minSecond;
         long divisor;
-        if (one == Integer.MIN_VALUE && two == Integer.MIN_VALUE && three == Integer.MIN_VALUE && four == Integer.MIN_VALUE) {
-            return Integer.MIN_VALUE;
+        if (one == Integer.MIN_VALUE || two == Integer.MIN_VALUE || three == Integer.MIN_VALUE || four == Integer.MIN_VALUE) {
+            throw new IllegalArgumentException();
         }
         if (one < 0) {
             one *= -1;
@@ -38,5 +38,4 @@ public class ThirdTaskFindGreatestCommonDivisor {
         }
         return 1;
     }
-
 }
