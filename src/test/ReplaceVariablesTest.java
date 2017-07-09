@@ -1,6 +1,6 @@
 package test;
 
-import com.implemica.task.FirstTaskReplaceVariables;
+import com.implemica.task.ReplaceVariables;
 import org.junit.*;
 
 import java.io.ByteArrayOutputStream;
@@ -9,13 +9,13 @@ import java.util.Random;
 
 import static org.junit.Assert.*;
 
-public class FirstTaskTest {
+public class ReplaceVariablesTest {
 
-    FirstTaskReplaceVariables firstTaskTest1;
+    ReplaceVariables task;
 
     @Before
     public void setUp() throws Exception {
-        firstTaskTest1 = new FirstTaskReplaceVariables();
+        task = new ReplaceVariables();
     }
 
     @Test
@@ -58,7 +58,7 @@ public class FirstTaskTest {
     private void methodTest(int first, int second) {
         ByteArrayOutputStream output = new ByteArrayOutputStream();
         System.setOut(new PrintStream(output));
-        firstTaskTest1.solution(first, second);
+        task.swappingVariables(first, second);
         assertEquals("X = "+second+" ,Y = "+first, output.toString());
     }
 

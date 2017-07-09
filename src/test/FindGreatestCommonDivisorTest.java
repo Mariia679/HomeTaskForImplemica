@@ -1,19 +1,19 @@
 package test;
 
-import com.implemica.task.ThirdTaskFindGreatestCommonDivisor;
+import com.implemica.task.FindGreatestCommonDivisor;
 import org.assertj.core.api.ThrowableAssert;
 import org.junit.*;
 
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.junit.Assert.*;
 
-public class ThirdTaskTest {
+public class FindGreatestCommonDivisorTest {
 
-    ThirdTaskFindGreatestCommonDivisor thirdTask1;
+    FindGreatestCommonDivisor task;
 
     @Before
     public void setUp() throws Exception {
-        thirdTask1 = new ThirdTaskFindGreatestCommonDivisor();
+        task = new FindGreatestCommonDivisor();
     }
 
     @Test
@@ -71,16 +71,16 @@ public class ThirdTaskTest {
     }
 
     private void methodTest(int one, int two, int three, int four, int expected) {
-        assertEquals(expected, thirdTask1.solution(one, two, three, four));
+        assertEquals(expected, task.getGreatestDivisor(one, two, three, four));
     }
 
-    private void methodTestIllegalArgument(int one, int two, int three, int four){
-//        assertThatThrownBy(() -> thirdTask1.solution(one, two, three,four))
+    private void methodTestIllegalArgument(int one, int two, int three, int four) {
+//        assertThatThrownBy(() -> task.getGreatestDivisor(one, two, three,four))
 //                .isInstanceOf(IllegalArgumentException.class);
         assertThatThrownBy(new ThrowableAssert.ThrowingCallable() {
             @Override
             public void call() throws Throwable {
-                thirdTask1.solution(one, two, three,four);
+                task.getGreatestDivisor(one, two, three, four);
             }
         }).isInstanceOf(IllegalArgumentException.class);
     }

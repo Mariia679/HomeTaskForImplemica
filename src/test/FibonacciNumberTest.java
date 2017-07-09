@@ -1,6 +1,6 @@
 package test;
 
-import com.implemica.task.FourthTaskFibonacciNumber;
+import com.implemica.task.FibonacciNumber;
 import org.assertj.core.api.ThrowableAssert;
 import org.junit.*;
 
@@ -9,13 +9,13 @@ import java.math.BigInteger;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.junit.Assert.*;
 
-public class FourthTaskTest {
+public class FibonacciNumberTest {
 
-    FourthTaskFibonacciNumber fourthTask1;
+    FibonacciNumber task;
 
     @Before
     public void setUp() throws Exception {
-        fourthTask1 = new FourthTaskFibonacciNumber();
+        task = new FibonacciNumber();
     }
 
     @Test
@@ -47,17 +47,17 @@ public class FourthTaskTest {
     }
 
     private void methodTest(int number, BigInteger expected) {
-        assertEquals(expected, fourthTask1.solution(number));
+        assertEquals(expected, task.getFibonacciNumber(number));
     }
 
     private void methodTestIllegalArgument(int number) {
-//        assertThatThrownBy(() -> fourthTask1.solution(number))
+//        assertThatThrownBy(() -> task.getFibonacciNumber(number))
 //                .isInstanceOf(IllegalArgumentException.class);
 
         assertThatThrownBy(new ThrowableAssert.ThrowingCallable() {
             @Override
             public void call() throws Throwable {
-                fourthTask1.solution(number);
+                task.getFibonacciNumber(number);
             }
         }).isInstanceOf(IllegalArgumentException.class);
     }

@@ -1,19 +1,19 @@
 package test;
 
-import com.implemica.task.SecondTaskFindFloorAndPorch;
+import com.implemica.task.FindFloorAndPorchInTheHouse;
 import org.assertj.core.api.ThrowableAssert;
 import org.junit.*;
 
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.junit.Assert.*;
 
-public class SecondTaskTest {
+public class FindFloorAndPorchInTheHouseTest {
 
-    SecondTaskFindFloorAndPorch secondTask1;
+    FindFloorAndPorchInTheHouse task;
 
     @Before
     public void setUp() throws Exception {
-        secondTask1 = new SecondTaskFindFloorAndPorch();
+        task = new FindFloorAndPorchInTheHouse();
     }
 
     @Test
@@ -74,7 +74,6 @@ public class SecondTaskTest {
         methodTest(1, 1, 1023342343, 1023342343, 1);
 
         //the max of integer valuable value
-        methodTest(Integer.MAX_VALUE, Integer.MAX_VALUE, Integer.MAX_VALUE, Integer.MAX_VALUE, 1);
         methodTest(Integer.MAX_VALUE, 1, 1, 1, 1);
         methodTest(1, Integer.MAX_VALUE, 1, 1, 1);
         methodTest(1, 1, Integer.MAX_VALUE, Integer.MAX_VALUE, 1);
@@ -87,6 +86,7 @@ public class SecondTaskTest {
         methodTestIllegalArgument(5, 2, -1);
 
         //the min and middle not valuable value
+        methodTestIllegalArgument(Integer.MAX_VALUE, Integer.MAX_VALUE, Integer.MAX_VALUE);
         methodTestIllegalArgument(Integer.MIN_VALUE, Integer.MIN_VALUE, Integer.MIN_VALUE);
         methodTestIllegalArgument(Integer.MIN_VALUE, 2, 2);
         methodTestIllegalArgument(2, Integer.MIN_VALUE, 2);
@@ -95,18 +95,18 @@ public class SecondTaskTest {
     }
 
     private void methodTest(int floor, int apartmentsOnTheFloor, int apartment, int expectedPorch, int expectedFloor) {
-        assertEquals(expectedPorch, secondTask1.solution(floor, apartmentsOnTheFloor, apartment));
-        assertEquals(expectedFloor, secondTask1.getFloorApartment());
+        assertEquals(expectedPorch, task.getPorch(floor, apartmentsOnTheFloor, apartment));
+        assertEquals(expectedFloor, task.getFloorApartment());
     }
 
     private void methodTestIllegalArgument(int floor, int apartmentsOnTheFloor, int apartment) {
-//        assertThatThrownBy(() ->secondTask1.solution(floor, apartmentsOnTheFloor, apartment))
+//        assertThatThrownBy(() ->task.getPorch(floor, apartmentsOnTheFloor, apartment))
 //                .isInstanceOf(IllegalArgumentException.class);
 
         assertThatThrownBy(new ThrowableAssert.ThrowingCallable() {
             @Override
             public void call() throws Throwable {
-                secondTask1.solution(floor, apartmentsOnTheFloor, apartment);
+                task.getPorch(floor, apartmentsOnTheFloor, apartment);
             }
         }).isInstanceOf(IllegalArgumentException.class);
     }
