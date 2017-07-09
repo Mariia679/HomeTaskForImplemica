@@ -87,16 +87,14 @@ public class FindTheDayOfTheWeek {
                 if (findDay > month.endOfMonth) {
                     throw new IllegalArgumentException();
                 }
-                if (firstDay < NUMBER_OF_DAYS_PER_WEEK) {
-                    day = findDay(month.startMonth) + firstDay;
-                    if (day >= NUMBER_OF_DAYS_PER_WEEK) {
-                        return day - NUMBER_OF_DAYS_PER_WEEK;
-                    }
-                    return day;
+                day = findDay(month.startMonth) + firstDay;
+                if (day >= NUMBER_OF_DAYS_PER_WEEK) {
+                    return day - NUMBER_OF_DAYS_PER_WEEK;
                 }
-                return findDay(month.startMonth);
+                return day;
             }
         }
+
         throw new IllegalArgumentException("Illegal value of month couldn't be more than 12");
     }
 

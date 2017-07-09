@@ -2,31 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="202d5846-9e32-4847-8b3e-23afd82c44c3" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TaskImplemica/com/implemica/task/FifthTaskFindTheDayOfTheWeek.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TaskImplemica/com/implemica/task/FirstTaskReplaceVariables.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TaskImplemica/com/implemica/task/FourthTaskFibonacciNumber.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TaskImplemica/com/implemica/task/SecondTaskFindFloorAndPorch.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TaskImplemica/com/implemica/task/ThirdTaskFindGreatestCommonDivisor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TaskImplemica/test/FifthTaskTest$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TaskImplemica/test/FifthTaskTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TaskImplemica/test/FirstTaskTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TaskImplemica/test/FourthTaskTest$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TaskImplemica/test/FourthTaskTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TaskImplemica/test/SecondTaskTest$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TaskImplemica/test/SecondTaskTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TaskImplemica/test/ThirdTaskTest$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TaskImplemica/test/ThirdTaskTest.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/implemica/task/FifthTaskFindTheDayOfTheWeek.java" afterPath="$PROJECT_DIR$/src/com/implemica/task/FindTheDayOfTheWeek.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/implemica/task/FirstTaskReplaceVariables.java" afterPath="$PROJECT_DIR$/src/com/implemica/task/ReplaceVariables.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/implemica/task/FourthTaskFibonacciNumber.java" afterPath="$PROJECT_DIR$/src/com/implemica/task/FibonacciNumber.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/implemica/task/SecondTaskFindFloorAndPorch.java" afterPath="$PROJECT_DIR$/src/com/implemica/task/FindFloorAndPorchInTheHouse.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/implemica/task/ThirdTaskFindGreatestCommonDivisor.java" afterPath="$PROJECT_DIR$/src/com/implemica/task/FindGreatestCommonDivisor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/FifthTaskTest.java" afterPath="$PROJECT_DIR$/src/test/FindTheDayOfTheWeekTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/FirstTaskTest.java" afterPath="$PROJECT_DIR$/src/test/ReplaceVariablesTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/FourthTaskTest.java" afterPath="$PROJECT_DIR$/src/test/FibonacciNumberTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/SecondTaskTest.java" afterPath="$PROJECT_DIR$/src/test/FindFloorAndPorchInTheHouseTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/ThirdTaskTest.java" afterPath="$PROJECT_DIR$/src/test/FindGreatestCommonDivisorTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/implemica/task/FindTheDayOfTheWeek.java" afterPath="$PROJECT_DIR$/src/com/implemica/task/FindTheDayOfTheWeek.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -58,9 +34,21 @@
       <file leaf-file-name="FindTheDayOfTheWeek.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/implemica/task/FindTheDayOfTheWeek.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1097">
-              <caret line="88" column="17" lean-forward="true" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="17" />
+            <state relative-caret-position="233">
+              <caret line="88" column="17" lean-forward="false" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="17" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FindTheDayOfTheWeekTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/FindTheDayOfTheWeekTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1320">
+              <caret line="135" column="0" lean-forward="false" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -244,7 +232,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in TaskImplemica">
+  <component name="RunManager" selected="JUnit.FindTheDayOfTheWeekTest.solutionTest1">
     <configuration default="false" name="All in TaskImplemica (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="TaskImplemica" />
@@ -748,8 +736,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.All in TaskImplemica" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.FindTheDayOfTheWeekTest.solutionTest1" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.FindTheDayOfTheWeekTest.solutionTest1" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.All in TaskImplemica" />
         <item index="2" class="java.lang.String" itemvalue="Application.Main" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.FindGreatestCommonDivisorTest.solutionTest1" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.All in TaskImplemica (2)" />
@@ -770,7 +758,7 @@
       <workItem from="1498574361607" duration="430000" />
       <workItem from="1498589673905" duration="689000" />
       <workItem from="1498983066138" duration="112709000" />
-      <workItem from="1499603042704" duration="22743000" />
+      <workItem from="1499603042704" duration="23128000" />
     </task>
     <servers />
   </component>
@@ -780,12 +768,6 @@
     </history-entry>
     <history-entry file="All_in_TaskImplemica - 2017.07.10 at 00h 29m 00s.xml">
       <configuration name="All in TaskImplemica" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FindTheDayOfTheWeekTest_solutionTest1 - 2017.07.10 at 00h 04m 28s.xml">
-      <configuration name="FindTheDayOfTheWeekTest.solutionTest1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FindTheDayOfTheWeekTest_solutionTest1 - 2017.07.10 at 00h 07m 17s.xml">
-      <configuration name="FindTheDayOfTheWeekTest.solutionTest1" configurationId="JUnit" />
     </history-entry>
     <history-entry file="FindTheDayOfTheWeekTest_solutionTest1 - 2017.07.10 at 00h 07m 41s.xml">
       <configuration name="FindTheDayOfTheWeekTest.solutionTest1" configurationId="JUnit" />
@@ -805,9 +787,15 @@
     <history-entry file="FindTheDayOfTheWeekTest_solutionTest1 - 2017.07.10 at 00h 16m 57s.xml">
       <configuration name="FindTheDayOfTheWeekTest.solutionTest1" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="FindTheDayOfTheWeekTest_solutionTest1 - 2017.07.10 at 00h 42m 50s.xml">
+      <configuration name="FindTheDayOfTheWeekTest.solutionTest1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FindTheDayOfTheWeekTest_solutionTest1 - 2017.07.10 at 00h 43m 25s.xml">
+      <configuration name="FindTheDayOfTheWeekTest.solutionTest1" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150162000" />
+    <option name="totallyTimeSpent" value="150547000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -831,7 +819,7 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35301206" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35301206" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17453505" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1204,7 +1192,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/FindTheDayOfTheWeekTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1755">
+        <state relative-caret-position="1320">
           <caret line="135" column="0" lean-forward="false" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1214,8 +1202,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/implemica/task/FindTheDayOfTheWeek.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1097">
-          <caret line="88" column="17" lean-forward="true" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="17" />
+        <state relative-caret-position="233">
+          <caret line="88" column="17" lean-forward="false" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="17" />
           <folding />
         </state>
       </provider>
