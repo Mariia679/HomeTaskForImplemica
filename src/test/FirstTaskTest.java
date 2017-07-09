@@ -7,7 +7,6 @@ import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 import java.util.Random;
 
-import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.*;
 
 public class FirstTaskTest {
@@ -63,8 +62,4 @@ public class FirstTaskTest {
         assertEquals("X = "+second+" ,Y = "+first, output.toString());
     }
 
-    @After
-    public void tearDown() throws Exception {
-        firstTaskTest1 = null;
-    }
 }

@@ -1,18 +1,16 @@
 package test;
 
 import com.implemica.task.FifthTaskFindTheDayOfTheWeek;
+import org.assertj.core.api.ThrowableAssert;
 import org.junit.*;
-import org.junit.rules.ExpectedException;
 
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.junit.Assert.*;
 
+
 public class FifthTaskTest {
 
     FifthTaskFindTheDayOfTheWeek fifthTask1;
-
-    @Rule
-    public final ExpectedException exception = ExpectedException.none();
 
     @Before
     public void setUp() throws Exception {
@@ -127,23 +125,16 @@ public class FifthTaskTest {
     }
 
     private void methodTestIllegalArgument(int firstDay, int findDay, int numberOfMonth) {
-//        try {
-//            fifthTask1.solution(firstDay, findDay, numberOfMonth);
-//        } catch (Exception e) {
-//            assertThat(e).isInstanceOf(IllegalArgumentException.class);
-//        }
-//        exception.expect(IllegalArgumentException.class);
-//        fifthTask1.solution(firstDay, findDay, numberOfMonth);
-//        assertThatThrownBy(fifthTask1::solution)
-//                // assertions
+//        assertThatThrownBy(() ->  fifthTask1.solution(firstDay, findDay, numberOfMonth))
 //                .isInstanceOf(IllegalArgumentException.class);
-        assertThatThrownBy(() -> new FifthTaskFindTheDayOfTheWeek().solution(firstDay,findDay,numberOfMonth))
-                .isInstanceOf(IllegalArgumentException.class);
-    }
 
-    @After
-    public void tearDown() throws Exception {
-        fifthTask1 = null;
+        assertThatThrownBy(new ThrowableAssert.ThrowingCallable() {
+            @Override
+            public void call() throws Throwable {
+                fifthTask1.solution(firstDay, findDay, numberOfMonth);
+            }
+        }).isInstanceOf(IllegalArgumentException.class);
+
     }
 
 }

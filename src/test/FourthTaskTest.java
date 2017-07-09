@@ -1,9 +1,8 @@
 package test;
 
-import com.implemica.task.FifthTaskFindTheDayOfTheWeek;
 import com.implemica.task.FourthTaskFibonacciNumber;
+import org.assertj.core.api.ThrowableAssert;
 import org.junit.*;
-import org.junit.rules.ExpectedException;
 
 import java.math.BigInteger;
 
@@ -11,9 +10,6 @@ import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.junit.Assert.*;
 
 public class FourthTaskTest {
-
-    @Rule
-    public final ExpectedException exception = ExpectedException.none();
 
     FourthTaskFibonacciNumber fourthTask1;
 
@@ -51,16 +47,18 @@ public class FourthTaskTest {
     }
 
     private void methodTest(int number, BigInteger expected) {
-//        assertEquals(expected, fourthTask1.getCache().get(number));
-//        assertNotNull(fourthTask1.getCache());
         assertEquals(expected, fourthTask1.solution(number));
-//        System.out.println(fourthTask1.getCache());
     }
 
-    private void methodTestIllegalArgument(int number){
-//        exception.expect(IllegalArgumentException.class);
-//        fourthTask1.solution(number);
-        assertThatThrownBy(() -> new FourthTaskFibonacciNumber().solution(number))
-                .isInstanceOf(IllegalArgumentException.class);
+    private void methodTestIllegalArgument(int number) {
+//        assertThatThrownBy(() -> fourthTask1.solution(number))
+//                .isInstanceOf(IllegalArgumentException.class);
+
+        assertThatThrownBy(new ThrowableAssert.ThrowingCallable() {
+            @Override
+            public void call() throws Throwable {
+                fourthTask1.solution(number);
+            }
+        }).isInstanceOf(IllegalArgumentException.class);
     }
 }

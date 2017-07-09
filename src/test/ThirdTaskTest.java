@@ -1,17 +1,13 @@
 package test;
 
-import com.implemica.task.SecondTaskFindFloorAndPorch;
 import com.implemica.task.ThirdTaskFindGreatestCommonDivisor;
+import org.assertj.core.api.ThrowableAssert;
 import org.junit.*;
-import org.junit.rules.ExpectedException;
 
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.junit.Assert.*;
 
 public class ThirdTaskTest {
-
-    @Rule
-    public final ExpectedException exception = ExpectedException.none();
 
     ThirdTaskFindGreatestCommonDivisor thirdTask1;
 
@@ -79,15 +75,14 @@ public class ThirdTaskTest {
     }
 
     private void methodTestIllegalArgument(int one, int two, int three, int four){
-//        exception.expect(IllegalArgumentException.class);
-//        thirdTask1.solution(one, two, three, four);
-        assertThatThrownBy(() -> new ThirdTaskFindGreatestCommonDivisor().solution(one, two, three,four))
-                .isInstanceOf(IllegalArgumentException.class);
+//        assertThatThrownBy(() -> thirdTask1.solution(one, two, three,four))
+//                .isInstanceOf(IllegalArgumentException.class);
+        assertThatThrownBy(new ThrowableAssert.ThrowingCallable() {
+            @Override
+            public void call() throws Throwable {
+                thirdTask1.solution(one, two, three,four);
+            }
+        }).isInstanceOf(IllegalArgumentException.class);
     }
 
-
-    @After
-    public void tearDown() throws Exception {
-        thirdTask1 = null;
-    }
 }

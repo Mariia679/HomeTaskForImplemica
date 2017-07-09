@@ -1,17 +1,13 @@
 package test;
 
-import com.implemica.task.FourthTaskFibonacciNumber;
 import com.implemica.task.SecondTaskFindFloorAndPorch;
+import org.assertj.core.api.ThrowableAssert;
 import org.junit.*;
-import org.junit.rules.ExpectedException;
 
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.junit.Assert.*;
 
 public class SecondTaskTest {
-
-    @Rule
-    public final ExpectedException exception = ExpectedException.none();
 
     SecondTaskFindFloorAndPorch secondTask1;
 
@@ -104,11 +100,15 @@ public class SecondTaskTest {
     }
 
     private void methodTestIllegalArgument(int floor, int apartmentsOnTheFloor, int apartment) {
-//        exception.expect(IllegalArgumentException.class);
-//        secondTask1.solution(floor, apartmentsOnTheFloor, apartment);
-        assertThatThrownBy(() -> new SecondTaskFindFloorAndPorch().solution(floor, apartmentsOnTheFloor, apartment))
-                .isInstanceOf(IllegalArgumentException.class);
+//        assertThatThrownBy(() ->secondTask1.solution(floor, apartmentsOnTheFloor, apartment))
+//                .isInstanceOf(IllegalArgumentException.class);
 
+        assertThatThrownBy(new ThrowableAssert.ThrowingCallable() {
+            @Override
+            public void call() throws Throwable {
+                secondTask1.solution(floor, apartmentsOnTheFloor, apartment);
+            }
+        }).isInstanceOf(IllegalArgumentException.class);
     }
 
 }
