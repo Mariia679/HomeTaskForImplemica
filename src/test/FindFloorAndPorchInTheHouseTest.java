@@ -1,10 +1,8 @@
 package test;
 
 import com.implemica.task.FindFloorAndPorchInTheHouse;
-import org.assertj.core.api.ThrowableAssert;
 import org.junit.*;
 
-import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.junit.Assert.*;
 
 public class FindFloorAndPorchInTheHouseTest {
@@ -68,7 +66,7 @@ public class FindFloorAndPorchInTheHouseTest {
 
 
         //test check middle integer
-        methodTest(1023342343, 1023342343, 1023342343, 1, 1);
+        methodTest(1023342343, 2, 1, 1, 1);
         methodTest(1023342343, 1, 1, 1, 1);
         methodTest(1, 1023342343, 1, 1, 1);
         methodTest(1, 1, 1023342343, 1023342343, 1);
@@ -90,8 +88,13 @@ public class FindFloorAndPorchInTheHouseTest {
         methodTestIllegalArgument(Integer.MIN_VALUE, Integer.MIN_VALUE, Integer.MIN_VALUE);
         methodTestIllegalArgument(Integer.MIN_VALUE, 2, 2);
         methodTestIllegalArgument(2, Integer.MIN_VALUE, 2);
+        methodTestIllegalArgument(2, Integer.MAX_VALUE, 2);
+        methodTestIllegalArgument(Integer.MAX_VALUE, 2, 2);
         methodTestIllegalArgument(2, 2, Integer.MIN_VALUE);
+        methodTestIllegalArgument(1023342343, 3, 1);
         methodTestIllegalArgument(-1023342343, -1023342343, -1023342343);
+        methodTestIllegalArgument(1023342343, 1023342343, 1023342343);
+
     }
 
     private void methodTest(int floor, int apartmentsOnTheFloor, int apartment, int expectedPorch, int expectedFloor) {
@@ -102,13 +105,18 @@ public class FindFloorAndPorchInTheHouseTest {
     private void methodTestIllegalArgument(int floor, int apartmentsOnTheFloor, int apartment) {
 //        assertThatThrownBy(() ->task.getPorch(floor, apartmentsOnTheFloor, apartment))
 //                .isInstanceOf(IllegalArgumentException.class);
-
-        assertThatThrownBy(new ThrowableAssert.ThrowingCallable() {
-            @Override
-            public void call() throws Throwable {
-                task.getPorch(floor, apartmentsOnTheFloor, apartment);
-            }
-        }).isInstanceOf(IllegalArgumentException.class);
+        try {
+            task.getPorch(floor, apartmentsOnTheFloor, apartment);
+            Assert.fail("Should throw an exception if one or more of given numbers are illegal");
+        } catch (IllegalArgumentException ex) {
+            //Should throw an exception if one or more of given numbers are illegal
+        }
+//        assertThatThrownBy(new ThrowableAssert.ThrowingCallable() {
+//            @Override
+//            public void call() throws Throwable {
+//                task.getPorch(floor, apartmentsOnTheFloor, apartment);
+//            }
+//        }).isInstanceOf(IllegalArgumentException.class);
     }
 
 }

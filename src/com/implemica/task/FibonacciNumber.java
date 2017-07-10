@@ -15,12 +15,20 @@ public class FibonacciNumber {
      */
     private Map<Integer, BigInteger> cache = new HashMap<>();
 
+    /**
+     * The max index of Fibonacci sequence that my computer can find.
+     */
     private static final int MAX_FIBONACCI_INDEX = 194800;
 
+    /**
+     * The index of Fibonacci sequence that we can start count.
+     * Before and include this index (0,1,1...)
+     */
     private static final int FIBONACCI_INDEX_TWO = 2;
 
     /**
      * Counts the Fibonacci number at its index.
+     * Formula of finding Fibonacci sequence fibonacci(i-1)+fibonacci(i-2)
      *
      * @param number The required Fibonacci number.
      * @return Fibonacci number.
@@ -29,21 +37,14 @@ public class FibonacciNumber {
      */
     public BigInteger getFibonacciNumber(int number) throws IllegalArgumentException {
         if (number < 0 || number > MAX_FIBONACCI_INDEX) {
-            throw new IllegalArgumentException("Illegal value: " + number + " should be >= 0 or <= 194800");
+            throw new IllegalArgumentException("Illegal value index = " + number + " should be >= 0 or <= " + MAX_FIBONACCI_INDEX);
         }
-        if (number < FIBONACCI_INDEX_TWO) {
-            cache.putIfAbsent(number, BigInteger.valueOf(number));
-            return cache.get(number);
-        }
-
-        BigInteger res = cache.get(number);
-        if (res != null) {
-            return res;
-        }
-        for (int i = FIBONACCI_INDEX_TWO; i <= number; i++) {
-            res = getFibonacciNumber(i - 1).add(getFibonacciNumber(i - 2));
-            cache.putIfAbsent(i, res);
-        }
-        return res;
+        //return the current (existing) value associated with the specified key
+        return cache.computeIfAbsent(number, (k) -> {
+            if (k < FIBONACCI_INDEX_TWO) {
+                return BigInteger.valueOf(k);
+            }
+            return getFibonacciNumber(k - 1).add(getFibonacciNumber(k - 2));
+        });
     }
 }

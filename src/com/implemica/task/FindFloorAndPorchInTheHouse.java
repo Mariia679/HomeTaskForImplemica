@@ -13,7 +13,7 @@ public class FindFloorAndPorchInTheHouse {
     private int floorApartment;
 
     /**
-     * Looking for a porch and a floor of an apartment which we search.
+     * Find a porch and a floor of an apartment which we are looking for.
      *
      * @param floor                Number of floors in the house.
      * @param apartmentsOnTheFloor Number of apartments on the floor in this house.
@@ -26,16 +26,21 @@ public class FindFloorAndPorchInTheHouse {
      */
     public int getPorch(int floor, int apartmentsOnTheFloor, int apartment) throws IllegalArgumentException {
         if (floor <= 0 || apartmentsOnTheFloor <= 0 || apartment <= 0) {
-            throw new IllegalArgumentException("Illegal value should be > 0");
+            throw new IllegalArgumentException("Illegal value floor = " + floor +
+                    " or apartments on the floor = " + apartmentsOnTheFloor +
+                    " or apartment = " + apartment + " should be > 0");
         }
-        if (floor == Integer.MAX_VALUE && apartmentsOnTheFloor == Integer.MAX_VALUE) {
-            throw new IllegalArgumentException("Illegal value should be < Integer.MAX_VALUE");
+        if (floor > Integer.MAX_VALUE / apartmentsOnTheFloor) {
+            throw new IllegalArgumentException("Illegal value floor > " + (Integer.MAX_VALUE / apartmentsOnTheFloor) +
+                    " should be < " + (Integer.MAX_VALUE / apartmentsOnTheFloor));
         }
+
         int porch = 1;
         int numberOfFlatInThePorch = floor * apartmentsOnTheFloor;
         for (floorApartment = apartment; floorApartment > numberOfFlatInThePorch; floorApartment -= numberOfFlatInThePorch) {
             porch++;
         }
+
         floorApartment /= apartmentsOnTheFloor;
         if (apartment % apartmentsOnTheFloor != 0) {
             floorApartment++;

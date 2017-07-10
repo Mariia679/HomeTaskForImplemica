@@ -1,10 +1,15 @@
 package com.implemica.task;
 
+import static java.lang.Math.*;
+
 /**
  * Find the greatest common divisor between the four digits
  */
 public class FindGreatestCommonDivisor {
 
+    /**
+     * The greatest common divisor if zero exists in transmitted values.
+     */
     private static final int GREATEST_COMMON_DIVISOR_IF_ZERO_EXISTS_IN_EXPRESSION = 1;
 
     /**
@@ -21,37 +26,25 @@ public class FindGreatestCommonDivisor {
      *                                  or {@code four == Integer.MIN_VALUE}
      */
     public int getGreatestDivisor(int one, int two, int three, int four) throws IllegalArgumentException {
-        int minFirst;
-        int minSecond;
-        int divisor;
         if (one == Integer.MIN_VALUE || two == Integer.MIN_VALUE || three == Integer.MIN_VALUE || four == Integer.MIN_VALUE) {
-            throw new IllegalArgumentException("Illegal value should be > Integer.MIN_VALUE");
+            throw new IllegalArgumentException("@one = " + one +
+                    " @two = " + two + " @three = " + three +
+                    " @four = " + four + " should be > " + Integer.MIN_VALUE);
         }
-        one = Math.abs(one);
-        two = Math.abs(two);
-        three = Math.abs(three);
-        four = Math.abs(four);
+        one = abs(one);
+        two = abs(two);
+        three = abs(three);
+        four = abs(four);
 
-        if (one < two) {
-            minFirst = one;
-        } else {
-            minFirst = two;
-        }
-        if (three < four) {
-            minSecond = three;
-        } else {
-            minSecond = four;
-        }
-        if (minFirst < minSecond) {
-            divisor = minFirst;
-        } else {
-            divisor = minSecond;
-        }
-        while (divisor > 0) {
-            if (one % divisor == 0 && two % divisor == 0 & three % divisor == 0 && four % divisor == 0) {
-                return divisor;
+        int minFirst = min(one, two);
+        int minSecond = min(three, four);
+        minFirst = min(minFirst, minSecond);
+
+        while (minFirst > 0) {
+            if (floorMod(one, minFirst) == 0 && floorMod(two, minFirst) == 0 & floorMod(three, minFirst) == 0 && floorMod(four, minFirst) == 0) {
+                return minFirst;
             }
-            divisor--;
+            minFirst--;
         }
         return GREATEST_COMMON_DIVISOR_IF_ZERO_EXISTS_IN_EXPRESSION;
     }

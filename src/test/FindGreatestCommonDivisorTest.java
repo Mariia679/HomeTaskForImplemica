@@ -1,10 +1,8 @@
 package test;
 
 import com.implemica.task.FindGreatestCommonDivisor;
-import org.assertj.core.api.ThrowableAssert;
 import org.junit.*;
 
-import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.junit.Assert.*;
 
 public class FindGreatestCommonDivisorTest {
@@ -77,12 +75,18 @@ public class FindGreatestCommonDivisorTest {
     private void methodTestIllegalArgument(int one, int two, int three, int four) {
 //        assertThatThrownBy(() -> task.getGreatestDivisor(one, two, three,four))
 //                .isInstanceOf(IllegalArgumentException.class);
-        assertThatThrownBy(new ThrowableAssert.ThrowingCallable() {
-            @Override
-            public void call() throws Throwable {
-                task.getGreatestDivisor(one, two, three, four);
-            }
-        }).isInstanceOf(IllegalArgumentException.class);
+        try {
+            task.getGreatestDivisor(one, two, three,four);
+            Assert.fail("Should throw an exception if one or more of given numbers are illegal");
+        } catch (IllegalArgumentException ex) {
+            //Should throw an exception if one or more of given numbers are illegal
+        }
+//        assertThatThrownBy(new ThrowableAssert.ThrowingCallable() {
+//            @Override
+//            public void call() throws Throwable {
+//                task.getGreatestDivisor(one, two, three, four);
+//            }
+//        }).isInstanceOf(IllegalArgumentException.class);
     }
 
 }
