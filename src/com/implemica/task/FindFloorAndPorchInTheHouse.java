@@ -32,7 +32,7 @@ public class FindFloorAndPorchInTheHouse {
         }
         if (floor > Integer.MAX_VALUE / apartmentsOnTheFloor) {
             throw new IllegalArgumentException("Illegal value floor > " + (Integer.MAX_VALUE / apartmentsOnTheFloor) +
-                    " should be < " + (Integer.MAX_VALUE / apartmentsOnTheFloor));
+                    " when apartmentsOnTheFloor == " + apartmentsOnTheFloor);
         }
 
         int porch = 1;

@@ -15,7 +15,7 @@ public class FindTheDayOfTheWeek {
     private int findDay;
 
     /**
-     * Find the day at the week knowing that the year has started
+     * Find the day at the week(in leap-year) knowing that the year has started
      * from a certain day of the week.
      *
      * @param firstDay      number of the day when new year is started
@@ -30,7 +30,7 @@ public class FindTheDayOfTheWeek {
      */
     public int getFindDay(int firstDay, int findDay, int numberOfMonth) throws IllegalArgumentException {
         if (firstDay > DayOfWeek.SUNDAY.getValue()) {
-            throw new IllegalArgumentException("Could not be more than number of  day at the week");
+            throw new IllegalArgumentException("Could not be more than number of day at the week");
         }
         if (firstDay <= 0 || findDay <= 0 || numberOfMonth <= 0) {
             throw new IllegalArgumentException("Illegal value, the variables @firstDay = " + firstDay +
@@ -43,13 +43,13 @@ public class FindTheDayOfTheWeek {
 
         for (Month month : Month.values()) {
             int monthLength = month.minLength(); // the minimum length of this month in days, from 28 to 31
-            allDaysUntilDayLookingFor += monthLength;
-
-            if (month.getValue() == numberOfMonth) {
+            if (month.getValue() != numberOfMonth) {
+                allDaysUntilDayLookingFor += monthLength;
+            } else {
                 if (findDay > monthLength) {
                     throw new IllegalArgumentException("Illegal value the day is more than " + month.minLength());
                 }
-                return getDayOfWeek(allDaysUntilDayLookingFor + firstDay - monthLength);
+                return getDayOfWeek(allDaysUntilDayLookingFor + firstDay + findDay);
             }
         }
         throw new IllegalArgumentException("Illegal value of month couldn't be more than 12");
@@ -58,14 +58,14 @@ public class FindTheDayOfTheWeek {
     /**
      * Find the day of the week.
      *
-     * @param amountOfDay The amount of the day up to the month of the day we are looking for
+     * @param amountOfDay The amount of the days up to the day we are looking for
      * @return The day of the week that we found
      */
     private int getDayOfWeek(int amountOfDay) {
         int sunday = DayOfWeek.SUNDAY.getValue();
-        if ((amountOfDay + findDay) % sunday == 0) {
+        if (amountOfDay % sunday == 0) {
             return DayOfWeek.SATURDAY.getValue();
         }
-        return (amountOfDay + findDay) % sunday - 1;
+        return amountOfDay % sunday - 1;
     }
 }

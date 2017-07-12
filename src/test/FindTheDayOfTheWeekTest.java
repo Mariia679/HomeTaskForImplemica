@@ -8,12 +8,7 @@ import static org.junit.Assert.*;
 
 public class FindTheDayOfTheWeekTest {
 
-    FindTheDayOfTheWeek task;
-
-    @Before
-    public void setUp() throws Exception {
-        task = new FindTheDayOfTheWeek();
-    }
+    FindTheDayOfTheWeek task = new FindTheDayOfTheWeek();
 
     @Test
     public void solutionTest1() throws Exception {
@@ -131,20 +126,12 @@ public class FindTheDayOfTheWeekTest {
     }
 
     private void methodTestIllegalArgument(int firstDay, int findDay, int numberOfMonth) {
-//        assertThatThrownBy(() ->  task.getFindDay(firstDay, findDay, numberOfMonth))
-//                .isInstanceOf(IllegalArgumentException.class);
         try {
             task.getFindDay(firstDay, findDay, numberOfMonth);
             Assert.fail("Should throw an exception if one or more of given numbers are illegal");
         } catch (IllegalArgumentException ex) {
-            //Should throw an exception if one or more of given numbers are illegal
+            //expected behavior
         }
-//        assertThatThrownBy(new ThrowableAssert.ThrowingCallable() {
-//            @Override
-//            public void call() throws Throwable {
-//                task.getFindDay(firstDay, findDay, numberOfMonth);
-//            }
-//        }).isInstanceOf(IllegalArgumentException.class);
     }
 
 }

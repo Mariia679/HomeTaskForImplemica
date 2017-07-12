@@ -2,26 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="202d5846-9e32-4847-8b3e-23afd82c44c3" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TaskImplemica/com/implemica/task/FindTheDayOfTheWeek$Month.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TaskImplemica/test/FibonacciNumberTest$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TaskImplemica/test/FindFloorAndPorchInTheHouseTest$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TaskImplemica/test/FindGreatestCommonDivisorTest$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TaskImplemica/test/FindTheDayOfTheWeekTest$1.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TaskImplemica/com/implemica/task/FibonacciNumber.class" afterPath="$PROJECT_DIR$/out/production/TaskImplemica/com/implemica/task/FibonacciNumber.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TaskImplemica/com/implemica/task/FindFloorAndPorchInTheHouse.class" afterPath="$PROJECT_DIR$/out/production/TaskImplemica/com/implemica/task/FindFloorAndPorchInTheHouse.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TaskImplemica/com/implemica/task/FindGreatestCommonDivisor.class" afterPath="$PROJECT_DIR$/out/production/TaskImplemica/com/implemica/task/FindGreatestCommonDivisor.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TaskImplemica/com/implemica/task/FindTheDayOfTheWeek.class" afterPath="$PROJECT_DIR$/out/production/TaskImplemica/com/implemica/task/FindTheDayOfTheWeek.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TaskImplemica/test/FibonacciNumberTest.class" afterPath="$PROJECT_DIR$/out/production/TaskImplemica/test/FibonacciNumberTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TaskImplemica/test/FindFloorAndPorchInTheHouseTest.class" afterPath="$PROJECT_DIR$/out/production/TaskImplemica/test/FindFloorAndPorchInTheHouseTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TaskImplemica/test/FindGreatestCommonDivisorTest.class" afterPath="$PROJECT_DIR$/out/production/TaskImplemica/test/FindGreatestCommonDivisorTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TaskImplemica/test/FindTheDayOfTheWeekTest.class" afterPath="$PROJECT_DIR$/out/production/TaskImplemica/test/FindTheDayOfTheWeekTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TaskImplemica/test/ReplaceVariablesTest.class" afterPath="$PROJECT_DIR$/out/production/TaskImplemica/test/ReplaceVariablesTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/implemica/task/FibonacciNumber.java" afterPath="$PROJECT_DIR$/src/com/implemica/task/FibonacciNumber.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/implemica/task/FindFloorAndPorchInTheHouse.java" afterPath="$PROJECT_DIR$/src/com/implemica/task/FindFloorAndPorchInTheHouse.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/implemica/task/FindGreatestCommonDivisor.java" afterPath="$PROJECT_DIR$/src/com/implemica/task/FindGreatestCommonDivisor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/implemica/task/FindTheDayOfTheWeek.java" afterPath="$PROJECT_DIR$/src/com/implemica/task/FindTheDayOfTheWeek.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/implemica/task/ReplaceVariables.java" afterPath="$PROJECT_DIR$/src/com/implemica/task/ReplaceVariables.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/FibonacciNumberTest.java" afterPath="$PROJECT_DIR$/src/test/FibonacciNumberTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/FindFloorAndPorchInTheHouseTest.java" afterPath="$PROJECT_DIR$/src/test/FindFloorAndPorchInTheHouseTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/FindGreatestCommonDivisorTest.java" afterPath="$PROJECT_DIR$/src/test/FindGreatestCommonDivisorTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/FindTheDayOfTheWeekTest.java" afterPath="$PROJECT_DIR$/src/test/FindTheDayOfTheWeekTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/ReplaceVariablesTest.java" afterPath="$PROJECT_DIR$/src/test/ReplaceVariablesTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,12 +42,127 @@
     <SUITE FILE_PATH="coverage/TaskImplemica$FirstTaskTest.coverage" NAME="FirstTaskTest Coverage Results" MODIFIED="1499016029570" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>test.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/TaskImplemica$All_in_TaskImplemica.coverage" NAME="All in TaskImplemica Coverage Results" MODIFIED="1499688003677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/TaskImplemica$All_in_TaskImplemica__4_.coverage" NAME="All in TaskImplemica (4) Coverage Results" MODIFIED="1499690396203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/TaskImplemica$All_in_TaskImplemica.coverage" NAME="All in TaskImplemica Coverage Results" MODIFIED="1499764082810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="FibonacciNumber.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/implemica/task/FibonacciNumber.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="215">
+              <caret line="31" column="62" lean-forward="false" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="62" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FindTheDayOfTheWeek.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/implemica/task/FindTheDayOfTheWeek.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="63" lean-forward="true" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReplaceVariables.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/implemica/task/ReplaceVariables.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="50" lean-forward="true" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FindFloorAndPorchInTheHouse.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/implemica/task/FindFloorAndPorchInTheHouse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="656">
+              <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FindGreatestCommonDivisor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/implemica/task/FindGreatestCommonDivisor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="466">
+              <caret line="39" column="7" lean-forward="false" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FindFloorAndPorchInTheHouseTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/FindFloorAndPorchInTheHouseTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1442">
+              <caret line="101" column="96" lean-forward="false" selection-start-line="101" selection-start-column="96" selection-end-line="101" selection-end-column="96" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FindGreatestCommonDivisorTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/FindGreatestCommonDivisorTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="985">
+              <caret line="69" column="83" lean-forward="false" selection-start-line="69" selection-start-column="83" selection-end-line="69" selection-end-column="83" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FindTheDayOfTheWeekTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/FindTheDayOfTheWeekTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="428">
+              <caret line="134" column="5" lean-forward="false" selection-start-line="134" selection-start-column="5" selection-end-line="134" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReplaceVariablesTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/ReplaceVariablesTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FibonacciNumberTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/FibonacciNumberTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-147">
+              <caret line="16" column="53" lean-forward="true" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -95,18 +208,19 @@
         <option value="$PROJECT_DIR$/src/test/ThirdTaskTest.java" />
         <option value="$PROJECT_DIR$/src/test/SecondTaskTest.java" />
         <option value="$PROJECT_DIR$/src/com/implemica/task/FirstTaskReplaceVariables.java" />
-        <option value="$PROJECT_DIR$/src/test/ReplaceVariablesTest.java" />
-        <option value="$PROJECT_DIR$/src/com/implemica/task/ReplaceVariables.java" />
         <option value="$PROJECT_DIR$/src/com/implemica/task/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/implemica/task/FibonacciNumberCalculator.java" />
+        <option value="$PROJECT_DIR$/src/com/implemica/task/FindGreatestCommonDivisor.java" />
+        <option value="$PROJECT_DIR$/src/com/implemica/task/FindTheDayOfTheWeek.java" />
+        <option value="$PROJECT_DIR$/src/com/implemica/task/FindFloorAndPorchInTheHouse.java" />
+        <option value="$PROJECT_DIR$/src/com/implemica/task/ReplaceVariables.java" />
+        <option value="$PROJECT_DIR$/src/com/implemica/task/Calcylator.java" />
+        <option value="$PROJECT_DIR$/src/test/FibonacciNumberTest.java" />
+        <option value="$PROJECT_DIR$/src/test/FindFloorAndPorchInTheHouseTest.java" />
         <option value="$PROJECT_DIR$/src/test/FindGreatestCommonDivisorTest.java" />
         <option value="$PROJECT_DIR$/src/test/FindTheDayOfTheWeekTest.java" />
-        <option value="$PROJECT_DIR$/src/test/FindFloorAndPorchInTheHouseTest.java" />
-        <option value="$PROJECT_DIR$/src/com/implemica/task/FibonacciNumberCalculator.java" />
-        <option value="$PROJECT_DIR$/src/test/FibonacciNumberTest.java" />
         <option value="$PROJECT_DIR$/src/com/implemica/task/FibonacciNumber.java" />
-        <option value="$PROJECT_DIR$/src/com/implemica/task/FindFloorAndPorchInTheHouse.java" />
-        <option value="$PROJECT_DIR$/src/com/implemica/task/FindTheDayOfTheWeek.java" />
-        <option value="$PROJECT_DIR$/src/com/implemica/task/FindGreatestCommonDivisor.java" />
+        <option value="$PROJECT_DIR$/src/test/ReplaceVariablesTest.java" />
       </list>
     </option>
   </component>
@@ -199,8 +313,8 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="FullScreen" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -229,7 +343,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FindGreatestCommonDivisorTest.solutionTest1">
+  <component name="RunManager" selected="JUnit.All in TaskImplemica (1)">
     <configuration default="false" name="FibonacciNumberTest.solutionTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -242,53 +356,6 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="test" />
       <option name="MAIN_CLASS_NAME" value="test.FibonacciNumberTest" />
-      <option name="METHOD_NAME" value="solutionTest1" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="All in TaskImplemica (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="TaskImplemica" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="FindTheDayOfTheWeekTest.solutionTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="TaskImplemica" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.FindTheDayOfTheWeekTest" />
       <option name="METHOD_NAME" value="solutionTest1" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
@@ -324,20 +391,56 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="FindGreatestCommonDivisorTest.solutionTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration default="false" name="All in TaskImplemica (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="TaskImplemica" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.FindGreatestCommonDivisorTest" />
-      <option name="METHOD_NAME" value="solutionTest1" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="Calcylator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.implemica.task.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.implemica.task.Calcylator" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="TaskImplemica" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="All in TaskImplemica (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="TaskImplemica" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -732,18 +835,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.FibonacciNumberTest.solutionTest1" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.All in TaskImplemica (1)" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.FindTheDayOfTheWeekTest.solutionTest1" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.All in TaskImplemica" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.FindGreatestCommonDivisorTest.solutionTest1" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.All in TaskImplemica" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.All in TaskImplemica (2)" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Calcylator" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.All in TaskImplemica (1)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.FindGreatestCommonDivisorTest.solutionTest1" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.FindTheDayOfTheWeekTest.solutionTest1" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.FibonacciNumberTest.solutionTest1" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.All in TaskImplemica" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.All in TaskImplemica (1)" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.All in TaskImplemica (1)" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.FibonacciNumberTest.solutionTest1" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Calcylator" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.All in TaskImplemica (2)" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.All in TaskImplemica" />
       </list>
     </recent_temporary>
   </component>
@@ -761,79 +864,81 @@
       <workItem from="1498574361607" duration="430000" />
       <workItem from="1498589673905" duration="689000" />
       <workItem from="1498983066138" duration="112709000" />
-      <workItem from="1499603042704" duration="52954000" />
+      <workItem from="1499603042704" duration="56205000" />
+      <workItem from="1499765219702" duration="13017000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FindGreatestCommonDivisorTest_solutionTest1 - 2017.07.11 at 00h 27m 51s.xml">
-      <configuration name="FindGreatestCommonDivisorTest.solutionTest1" configurationId="JUnit" />
+    <history-entry file="All_in_TaskImplemica_(1) - 2017.07.11 at 16h 36m 57s.xml">
+      <configuration name="All in TaskImplemica (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FindGreatestCommonDivisorTest_solutionTest1 - 2017.07.11 at 00h 28m 09s.xml">
-      <configuration name="FindGreatestCommonDivisorTest.solutionTest1" configurationId="JUnit" />
+    <history-entry file="FibonacciNumberTest_solutionTest1 - 2017.07.11 at 15h 52m 11s.xml">
+      <configuration name="FibonacciNumberTest.solutionTest1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FindGreatestCommonDivisorTest_solutionTest1 - 2017.07.11 at 00h 31m 19s.xml">
-      <configuration name="FindGreatestCommonDivisorTest.solutionTest1" configurationId="JUnit" />
+    <history-entry file="FibonacciNumberTest_solutionTest1 - 2017.07.11 at 15h 52m 13s.xml">
+      <configuration name="FibonacciNumberTest.solutionTest1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FindTheDayOfTheWeekTest_solutionTest1 - 2017.07.11 at 00h 24m 54s.xml">
-      <configuration name="FindTheDayOfTheWeekTest.solutionTest1" configurationId="JUnit" />
+    <history-entry file="FibonacciNumberTest_solutionTest1 - 2017.07.11 at 15h 52m 15s.xml">
+      <configuration name="FibonacciNumberTest.solutionTest1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FindTheDayOfTheWeekTest_solutionTest1 - 2017.07.11 at 00h 25m 08s.xml">
-      <configuration name="FindTheDayOfTheWeekTest.solutionTest1" configurationId="JUnit" />
+    <history-entry file="FibonacciNumberTest_solutionTest1 - 2017.07.11 at 15h 52m 24s.xml">
+      <configuration name="FibonacciNumberTest.solutionTest1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FindTheDayOfTheWeekTest_solutionTest1 - 2017.07.11 at 00h 25m 11s.xml">
-      <configuration name="FindTheDayOfTheWeekTest.solutionTest1" configurationId="JUnit" />
+    <history-entry file="FibonacciNumberTest_solutionTest1 - 2017.07.11 at 15h 52m 31s.xml">
+      <configuration name="FibonacciNumberTest.solutionTest1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FindTheDayOfTheWeekTest_solutionTest1 - 2017.07.11 at 00h 25m 24s.xml">
-      <configuration name="FindTheDayOfTheWeekTest.solutionTest1" configurationId="JUnit" />
+    <history-entry file="FibonacciNumberTest_solutionTest1 - 2017.07.11 at 15h 52m 34s.xml">
+      <configuration name="FibonacciNumberTest.solutionTest1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FindTheDayOfTheWeekTest_solutionTest1 - 2017.07.11 at 00h 25m 33s.xml">
-      <configuration name="FindTheDayOfTheWeekTest.solutionTest1" configurationId="JUnit" />
+    <history-entry file="FibonacciNumberTest_solutionTest1 - 2017.07.11 at 15h 52m 36s.xml">
+      <configuration name="FibonacciNumberTest.solutionTest1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FindTheDayOfTheWeekTest_solutionTest1 - 2017.07.11 at 00h 25m 37s.xml">
-      <configuration name="FindTheDayOfTheWeekTest.solutionTest1" configurationId="JUnit" />
+    <history-entry file="FibonacciNumberTest_solutionTest1 - 2017.07.11 at 16h 33m 22s.xml">
+      <configuration name="FibonacciNumberTest.solutionTest1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FindTheDayOfTheWeekTest_solutionTest1 - 2017.07.11 at 00h 25m 40s.xml">
-      <configuration name="FindTheDayOfTheWeekTest.solutionTest1" configurationId="JUnit" />
+    <history-entry file="FibonacciNumberTest_solutionTest1 - 2017.07.11 at 16h 34m 35s.xml">
+      <configuration name="FibonacciNumberTest.solutionTest1" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="180373000" />
+    <option name="totallyTimeSpent" value="196641000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3987952" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32771084" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30843374" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" x="100" y="100" width="1240" height="700" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17453505" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30843374" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22460657" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22460657" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="combo" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" x="100" y="100" width="1240" height="700" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17453505" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -854,30 +959,14 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/implemica/task/FibonacciNumber.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/implemica/task/FindFloorAndPorchInTheHouse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="27" lean-forward="true" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/implemica/Task.java" />
     <entry file="file://$PROJECT_DIR$/src/com/implemica/task/FindTheDayOfTheWeek.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -921,7 +1010,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -965,19 +1056,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/implemica/entity/ThirdTaskFindGreatestCommonDivisorTest.java" />
     <entry file="file://$PROJECT_DIR$/src/com/implemica/Task.java" />
-    <entry file="jar://$USER_HOME$/Downloads/junit-4.11.jar!/org/junit/Assert.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="74" column="9" lean-forward="false" selection-start-line="72" selection-start-column="47" selection-end-line="74" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/OutputTest.java" />
     <entry file="file://$PROJECT_DIR$/src/com/implemica/Main.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/io/ByteArrayOutputStream.java">
@@ -1060,29 +1146,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/implemica/task/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="49" lean-forward="false" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/implemica/task/Main.java" />
     <entry file="jar://$USER_HOME$/Downloads/assertj-core-3.8.0.jar!/org/assertj/core/api/ThrowableAssert.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="469">
           <caret line="39" column="21" lean-forward="false" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/ReplaceVariablesTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="60" column="31" lean-forward="false" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1094,55 +1162,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/FindFloorAndPorchInTheHouseTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-18">
-          <caret line="93" column="33" lean-forward="false" selection-start-line="93" selection-start-column="33" selection-end-line="93" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/implemica/task/FibonacciNumberCalculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="40" lean-forward="false" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/implemica/task/CachedFibonacciNumberService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/implemica/task/FibonacciNumberCalculator.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/implemica/task/CachedFibonacciNumberService.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/time/Month.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="123">
           <caret line="443" column="37" lean-forward="true" selection-start-line="441" selection-start-column="7" selection-end-line="443" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="938" column="71" lean-forward="true" selection-start-line="937" selection-start-column="15" selection-end-line="938" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/FibonacciNumberTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="50" column="46" lean-forward="true" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1154,10 +1179,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/FindTheDayOfTheWeekTest.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/function/Function.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="268">
+          <caret line="48" column="6" lean-forward="false" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/junit-4.11.jar!/org/junit/Assert.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="36" column="23" lean-forward="false" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="128" column="17" lean-forward="false" selection-start-line="128" selection-start-column="17" selection-end-line="128" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/implemica/task/Calcylator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/FindFloorAndPorchInTheHouseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1442">
+          <caret line="101" column="96" lean-forward="false" selection-start-line="101" selection-start-column="96" selection-end-line="101" selection-end-column="96" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1166,44 +1223,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/FindGreatestCommonDivisorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="985">
+          <caret line="69" column="83" lean-forward="false" selection-start-line="69" selection-start-column="83" selection-end-line="69" selection-end-column="83" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/implemica/task/FibonacciNumber.java">
+    <entry file="file://$PROJECT_DIR$/src/test/FindTheDayOfTheWeekTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="48" column="5" lean-forward="false" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/implemica/task/FindFloorAndPorchInTheHouse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-165">
-          <caret line="15" column="72" lean-forward="false" selection-start-line="15" selection-start-column="72" selection-end-line="15" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/implemica/task/FindGreatestCommonDivisor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="31" column="20" lean-forward="false" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/implemica/task/FindTheDayOfTheWeek.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="28" lean-forward="false" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+        <state relative-caret-position="428">
+          <caret line="134" column="5" lean-forward="false" selection-start-line="134" selection-start-column="5" selection-end-line="134" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1212,8 +1243,64 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/implemica/task/ReplaceVariables.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        <state relative-caret-position="255">
+          <caret line="17" column="50" lean-forward="true" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/implemica/task/FindTheDayOfTheWeek.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="63" lean-forward="true" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/implemica/task/FindGreatestCommonDivisor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="39" column="7" lean-forward="false" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/FibonacciNumberTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-147">
+          <caret line="16" column="53" lean-forward="true" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/ReplaceVariablesTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/implemica/task/FibonacciNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="31" column="62" lean-forward="false" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/implemica/task/FindFloorAndPorchInTheHouse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="656">
+          <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding />
         </state>
       </provider>

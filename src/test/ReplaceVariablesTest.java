@@ -11,12 +11,7 @@ import static org.junit.Assert.*;
 
 public class ReplaceVariablesTest {
 
-    ReplaceVariables task;
-
-    @Before
-    public void setUp() throws Exception {
-        task = new ReplaceVariables();
-    }
+    ReplaceVariables task = new ReplaceVariables();
 
     @Test
     public void solutionTest() throws Exception {
@@ -49,6 +44,7 @@ public class ReplaceVariablesTest {
         methodTest(-9999, 1001);
         methodTest(-7264, -9823);
         methodTest(-7264, -9823);
+
 
         Random r = new Random();
         methodTest(r.nextInt(), r.nextInt());

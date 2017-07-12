@@ -7,12 +7,7 @@ import static org.junit.Assert.*;
 
 public class FindGreatestCommonDivisorTest {
 
-    FindGreatestCommonDivisor task;
-
-    @Before
-    public void setUp() throws Exception {
-        task = new FindGreatestCommonDivisor();
-    }
+    FindGreatestCommonDivisor task = new FindGreatestCommonDivisor();
 
     @Test
     public void solutionTest1() throws Exception {
@@ -73,20 +68,12 @@ public class FindGreatestCommonDivisorTest {
     }
 
     private void methodTestIllegalArgument(int one, int two, int three, int four) {
-//        assertThatThrownBy(() -> task.getGreatestDivisor(one, two, three,four))
-//                .isInstanceOf(IllegalArgumentException.class);
         try {
-            task.getGreatestDivisor(one, two, three,four);
+            task.getGreatestDivisor(one, two, three, four);
             Assert.fail("Should throw an exception if one or more of given numbers are illegal");
         } catch (IllegalArgumentException ex) {
-            //Should throw an exception if one or more of given numbers are illegal
+            //expected behavior
         }
-//        assertThatThrownBy(new ThrowableAssert.ThrowingCallable() {
-//            @Override
-//            public void call() throws Throwable {
-//                task.getGreatestDivisor(one, two, three, four);
-//            }
-//        }).isInstanceOf(IllegalArgumentException.class);
     }
 
 }

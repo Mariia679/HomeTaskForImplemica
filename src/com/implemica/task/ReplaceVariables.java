@@ -15,6 +15,7 @@ public class ReplaceVariables {
         first = first ^ second;
         second = first ^ second;
         first = second ^ first;
+//        first = first + second - (second = first);
 
         System.out.print("X = " + first + " ,Y = " + second);
     }

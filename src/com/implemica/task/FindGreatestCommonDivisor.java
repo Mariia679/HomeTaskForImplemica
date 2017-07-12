@@ -41,7 +41,10 @@ public class FindGreatestCommonDivisor {
         minFirst = min(minFirst, minSecond);
 
         while (minFirst > 0) {
-            if (floorMod(one, minFirst) == 0 && floorMod(two, minFirst) == 0 & floorMod(three, minFirst) == 0 && floorMod(four, minFirst) == 0) {
+            if (floorMod(one, minFirst) == 0
+                    && floorMod(two, minFirst) == 0
+                    && floorMod(three, minFirst) == 0
+                    && floorMod(four, minFirst) == 0) {
                 return minFirst;
             }
             minFirst--;
